@@ -16,13 +16,6 @@ main {
   overflow: auto;
 }
 
-#fallback {
-  font-weight: bold;
-  font-size: 1.15rem;
-  margin: 0;
-  text-align: center;
-}
-
 @media (min-width: 768px) {
   main {
     margin: 4rem auto;
@@ -31,10 +24,5 @@ main {
 
   #users {
     flex-direction: column;
-  }
-
-  #fallback {
-    font-size: 1.5rem;
-    text-align: left;
   }
 }
