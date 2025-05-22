@@ -1,0 +1,14 @@
+<!-- User Card Container -->
+<div class="card shadow-sm border-0 mb-3">
+  <div class="card-body text-center p-3">
+    <button (click)="onSelectUser()" class="btn p-0 border-0 bg-transparent">
+      <img 
+        [src]="imagePath" 
+        [alt]="name" 
+        class="rounded-circle mb-2" 
+        style="width: 80px; height: 80px; object-fit: cover;" 
+      />
+      <h6 class="mb-0">{{ name }}</h6>
+    </button>
+  </div>
+</div>
