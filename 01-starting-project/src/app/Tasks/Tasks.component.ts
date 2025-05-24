@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TasksComponent  {
 
 
-  
+
   @Input ({required: true}) id! : string ;
   @Input ({required: true}) avatar! : string ;
   @Input ({required: true}) name! : string ;
@@ -18,6 +18,10 @@ export class TasksComponent  {
     return `assets/users/${this.avatar}`;
   }
   onSelectUser() {
+    // alkdka
+    // ckmzzxkc
+    // ';ckzcmcZSc
+    // ADsmd'
     // this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
     // console.log('Selected user:', this.id);
   }
