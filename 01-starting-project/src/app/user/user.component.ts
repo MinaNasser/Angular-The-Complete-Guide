@@ -13,16 +13,28 @@ export class UserComponent {
   @Input({required: true}) name! : string ;
   @Output() select =  new EventEmitter();
   // @Output() selectedUserId = new EventEmitter<string>();
+
+  selected = output<string>()
+
   selectedUserId =output<string>()
   // avatar = input.required<string>();
   // name = input.required<string>();
 
   // imagePath = computed(() => `assets/users/${this.avatar()}`); // Dynamically set the image path based on the avatar property
 
+
+
+
+
   get imagePath() {
     return `assets/users/${this.avatar}`;
   }
 
+  onSelectUserwithSignal() {
+    this.selected.emit(this.id); // Emit the selected user ID to the parent component
+    // this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
+    // console.log('Selected user:', this.id);
+  }
 
   onSelectUser() {
 
