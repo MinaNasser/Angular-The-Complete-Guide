@@ -11,6 +11,8 @@ export class UserComponent {
   @Input({required: true}) id! : string ;
   @Input({required: true}) avatar! : string ;
   @Input({required: true}) name! : string ;
+  @Output() select =  new EventEmitter();
+
 
   // @Output() selectedUserId = new EventEmitter<string>();
 
@@ -33,7 +35,10 @@ export class UserComponent {
 
 
   onSelectUser() {
-    this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
+
+
+    this.select.emit(this.id); // Emit the selected user ID to the parent component
+    // this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
 
 
     // this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
