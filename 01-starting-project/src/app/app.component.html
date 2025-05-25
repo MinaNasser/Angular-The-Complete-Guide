@@ -2,11 +2,11 @@
 <main class="container py-4">
   <ul id="users" class="row list-unstyled">
     <li *ngFor="let user of users" class="col-md-4 col-sm-6 mb-4">
-      <app-user [id]="user.id" [avatar]="user.avatar" [name]="user.name" (select)="onSelectUser($event)" />
+      <app-user [user]="user" (select)="onSelectUser($event)" />
     </li>
   </ul>
 
   <div *ngIf="selectedUser" class="mt-5">
-    <app-Tasks [id]="selectedUserId" [avatar]="selectedUser.avatar" [name]="selectedUser.name" />
+    <app-Tasks [user]="selectedUser" />
   </div>
 </main>

@@ -8,9 +8,14 @@ import { Component, computed, EventEmitter, input,output, Input, Output } from '
   styleUrl: './user.component.css',
 })
 export class UserComponent {
-  @Input({required: true}) id! : string ;
-  @Input({required: true}) avatar! : string ;
-  @Input({required: true}) name! : string ;
+  // @Input({required: true}) id! : string ;
+  // @Input({required: true}) avatar! : string ;
+  // @Input({required: true}) name! : string ;
+  @Input({required: true}) user :{
+    id: string;
+    avatar: string;
+    name: string;
+  }
   @Output() select =  new EventEmitter<string>();
   // @Output() selectedUserId = new EventEmitter<string>();
 
@@ -27,11 +32,11 @@ export class UserComponent {
 
 
   get imagePath() {
-    return `assets/users/${this.avatar}`;
+    return `assets/users/${this.user.avatar}`;
   }
 
   onSelectUserwithSignal() {
-    this.selected.emit(this.id); // Emit the selected user ID to the parent component
+    this.selected.emit(this.user.id); // Emit the selected user ID to the parent component
     // this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
     // console.log('Selected user:', this.id);
   }
@@ -39,7 +44,7 @@ export class UserComponent {
   onSelectUser() {
 
 
-    this.select.emit(this.id); // Emit the selected user ID to the parent component
+    this.select.emit(this.user.id); // Emit the selected user ID to the parent component
     // this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
 
 
@@ -60,4 +65,14 @@ export class UserComponent {
   //   this.selectedUser.set( DUMMY_USERS[randomIndex]); // Select a random user from the dummy users
   //   console.log('Selected user:', this.selectedUser);
   // }
+
+
+  constructor() {
+    // Initialization logic can go here if needed
+    this.user = {
+      id: '',
+      avatar: '',
+      name: ''
+    };
+  }
 }

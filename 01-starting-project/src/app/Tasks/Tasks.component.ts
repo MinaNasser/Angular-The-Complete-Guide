@@ -10,12 +10,25 @@ export class TasksComponent  {
 
 
 
-  @Input ({required: true}) id! : string ;
-  @Input ({required: true}) avatar! : string ;
-  @Input ({required: true}) name! : string ;
-  constructor() { }
+  // @Input ({required: true}) id! : string ;
+  // @Input ({required: true}) avatar! : string ;
+  // @Input ({required: true}) name! : string ;
+
+  @Input({required: true}) user :{
+    id: string;
+    avatar: string;
+    name: string;
+  } ; // Assuming user is an object with properties like id, avatar, name
+  constructor() {
+    // Initialization logic can go here if needed
+    this.user = {
+      id: '',
+      avatar: '',
+      name: ''
+    };
+  }
   get imagePath() {
-    return `assets/users/${this.avatar}`;
+    return `assets/users/${this.user.avatar}`;
   }
   onSelectUser() {
     // alkdka
