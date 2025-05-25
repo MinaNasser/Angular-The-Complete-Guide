@@ -1,9 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../Models/User';
+import { TaskComponent } from './task/task.component';
 
 @Component({
   selector: 'app-Tasks',
   standalone: true,
+  imports: [TaskComponent],
   templateUrl: './Tasks.component.html',
   styleUrls: ['./Tasks.component.css']
 })

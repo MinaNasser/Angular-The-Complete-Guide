@@ -1,14 +1,16 @@
-<!-- User Card Container -->
-<div class="card shadow-sm border-0 mb-3">
-  <div class="card-body text-center p-3">
-    <button (click)="onSelectUser()" class="btn p-0 border-0 bg-transparent">
-      <img
-        [src]="imagePath"
-        [alt]="user.name"
-        class="rounded-circle mb-2 img-fluid w-50 h-50"
-      />
-      <h6 class="mb-0">{{ user.name }}</h6>
-    </button>
+<section id = "tasks">
+  <header>
+    <h2 class="text-light">{{user.name}}'s Tasks</h2>
+  </header>
+  <menu>
+    <button id="btn-add">Add Task</button>
+  </menu>
 
-  </div>
-</div>
+  <ul>
+    <li>
+      <app-task>
+
+      </app-task>
+    </li>
+  </ul>
+</section>
