@@ -1,9 +1,15 @@
 <app-header />
-<main class="container py-4">
-  <ul id="users" class="row list-unstyled">
-    <li *ngFor="let user of users" class="col-md-4 col-sm-6 mb-4">
+<main class="container mt-5">
+  <ul id="users" class="row list-unstyled mb-4 justify-content-center">
+    @for (user of users; track $index) {
+      <li class="">
+        <app-user [user]="user" (select)="onSelectUser($event)" />
+      </li>
+    }
+
+    <!-- <li *ngFor="let user of users" class="col-md-4 col-sm-6 mb-4">
       <app-user [user]="user" (select)="onSelectUser($event)" />
-    </li>
+    </li> -->
   </ul>
 
   <div *ngIf="selectedUser" class="mt-5">
