@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { User } from '../Models/User';
 
 @Component({
   selector: 'app-Tasks',
@@ -14,11 +15,13 @@ export class TasksComponent  {
   // @Input ({required: true}) avatar! : string ;
   // @Input ({required: true}) name! : string ;
 
-  @Input({required: true}) user :{
-    id: string;
-    avatar: string;
-    name: string;
-  } ; // Assuming user is an object with properties like id, avatar, name
+  @Input({required: true}) user :User
+
+  // {
+  //   id: string;
+  //   avatar: string;
+  //   name: string;
+  // } ; // Assuming user is an object with properties like id, avatar, name
   constructor() {
     // Initialization logic can go here if needed
     this.user = {

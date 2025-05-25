@@ -1,4 +1,6 @@
 import { Component, computed, EventEmitter, input,output, Input, Output } from '@angular/core';
+import { User } from '../Models/User';
+
 
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);// Randomly select a user from the dummy users
 @Component({
@@ -11,11 +13,7 @@ export class UserComponent {
   // @Input({required: true}) id! : string ;
   // @Input({required: true}) avatar! : string ;
   // @Input({required: true}) name! : string ;
-  @Input({required: true}) user :{
-    id: string;
-    avatar: string;
-    name: string;
-  }
+  @Input({required: true}) user: User; // Assuming user is an object with properties like id, avatar, name
   @Output() select =  new EventEmitter<string>();
   // @Output() selectedUserId = new EventEmitter<string>();
 
