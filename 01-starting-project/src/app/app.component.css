@@ -16,11 +16,14 @@ main {
   overflow: auto;
 }
 
-#fallback {
+#fillback {
   font-weight: bold;
   font-size: 1.15rem;
   margin: 0;
   text-align: center;
+  /* background-color: #8d64b4; */
+  color: #dfc4f6;
+
 }
 
 @media (min-width: 768px) {
