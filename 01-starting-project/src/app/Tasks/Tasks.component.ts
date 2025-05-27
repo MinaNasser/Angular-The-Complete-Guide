@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from '../Models/User';
+import { User } from '../Models/User.model';
 import { TaskComponent } from './task/task.component';
+import { Dummy_Tasks } from '../dummy-tasks';
 
 @Component({
   selector: 'app-Tasks',
@@ -10,7 +11,7 @@ import { TaskComponent } from './task/task.component';
   styleUrls: ['./Tasks.component.css']
 })
 export class TasksComponent  {
-
+  tasks =Dummy_Tasks;
 
 
   // @Input ({required: true}) id! : string ;
@@ -18,7 +19,6 @@ export class TasksComponent  {
   // @Input ({required: true}) name! : string ;
 
   @Input({required: true}) user :User
-
   // {
   //   id: string;
   //   avatar: string;
@@ -43,4 +43,23 @@ export class TasksComponent  {
     // this.selectedUserId.emit(this.id); // Emit the selected user ID to the parent component
     // console.log('Selected user:', this.id);
   }
+  onTaskCompleted(taskId: string) {
+    // Handle task completion logic here
+    console.log(`Task with ID ${taskId} completed.`);
+  }
+  onTaskDeleted(taskId: string) {
+    // Handle task deletion logic here
+    console.log(`Task with ID ${taskId} deleted.`);
+  }
+  onTaskEdited(taskId: string) {
+    // Handle task editing logic here
+    console.log(`Task with ID ${taskId} edited.`);
+  }
+   get filteredTasks() {
+    // if (!this.user.id) {
+    //   return this.tasks;
+    // }
+    return this.tasks.filter((task) => task.userId === this.user.id);
+  }
+
 }

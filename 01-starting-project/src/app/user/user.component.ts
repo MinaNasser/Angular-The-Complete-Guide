@@ -1,5 +1,5 @@
 import { Component, computed, EventEmitter, input,output, Input, Output } from '@angular/core';
-import { User } from '../Models/User';
+import { User } from '../Models/User.model';
 
 
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);// Randomly select a user from the dummy users
