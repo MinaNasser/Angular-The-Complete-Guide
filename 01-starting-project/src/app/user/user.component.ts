@@ -15,6 +15,8 @@ export class UserComponent {
   // @Input({required: true}) name! : string ;
   @Input({required: true}) user: User; // Assuming user is an object with properties like id, avatar, name
   @Output() select =  new EventEmitter<string>();
+
+  @Input({required: true}) isSelected!: boolean; // Assuming id is a string
   // @Output() selectedUserId = new EventEmitter<string>();
 
   selected = output<string>()

@@ -6,6 +6,7 @@ export const Dummy_Tasks = [
     summary:
       'Learn all the basic and advanced features of Angular & how to apply them.',
     dueDate: '2025-12-31',
+    status: 'pending',
   },
   {
     id: 't2',
@@ -13,6 +14,7 @@ export const Dummy_Tasks = [
     title: 'Build first prototype',
     summary: 'Build a first prototype of the online shop website',
     dueDate: '2024-05-31',
+    status: 'pending',
   },
   {
     id: 't3',
@@ -21,6 +23,7 @@ export const Dummy_Tasks = [
     summary:
       'Prepare and describe an issue template which will help with project management',
     dueDate: '2024-06-15',
+    status: 'pending',
   },
   {
     id: 't4',
@@ -28,6 +31,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't5',
@@ -35,6 +39,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't6',
@@ -42,6 +47,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't7',
@@ -49,6 +55,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't8',
@@ -56,6 +63,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't9',
@@ -63,6 +71,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't10',
@@ -70,6 +79,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't11',
@@ -77,6 +87,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't12',
@@ -84,6 +95,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't13',
@@ -91,6 +103,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't14',
@@ -98,6 +111,7 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
   {
     id: 't15',
@@ -105,5 +119,6 @@ export const Dummy_Tasks = [
     title: 'Create logo',
     summary: 'Create a new logo for the company',
     dueDate: '2024-07-15',
+    status: 'pending',
   },
 ]

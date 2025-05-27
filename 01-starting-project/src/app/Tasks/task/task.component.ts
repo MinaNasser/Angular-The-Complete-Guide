@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Task } from 'zone.js/lib/zone-impl';
 import { task } from '../../Models/Task.model';
 
@@ -11,20 +11,21 @@ import { task } from '../../Models/Task.model';
 export class TaskComponent implements OnInit {
 
   @Input({required: true}) task! :task;
+  @Output() Complete = new EventEmitter<string>();
   constructor() {
     this.task = {
       id: '',
       userId: '',
       title: '',
       summary: '',
-      dueDate: ''
+      dueDate: '',
+      status: 'pending',
     };
   }
 
   ngOnInit() {
   }
   onEditTask() {
-    // Handle task editing logic here
     console.log(`Task with ID ${this.task.id} edited.`);
   }
   onDeleteTask() {
@@ -33,6 +34,9 @@ export class TaskComponent implements OnInit {
   }
   onCompleteTask() {
     // Handle task completion logic here
+    this.Complete.emit(this.task.id);
+    this.task.status = 'completed'; // Update the task status to completed
+
     console.log(`Task with ID ${this.task.id} completed.`);
   }
 

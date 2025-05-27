@@ -10,8 +10,13 @@ import { Dummy_Tasks } from '../dummy-tasks';
   templateUrl: './Tasks.component.html',
   styleUrls: ['./Tasks.component.css']
 })
-export class TasksComponent  {
+export class TasksComponent implements OnInit {
   tasks =Dummy_Tasks;
+
+  ngOnInit() {
+  const storedTasks = localStorage.getItem('tasks');
+  this.tasks = storedTasks ? JSON.parse(storedTasks) : Dummy_Tasks;
+}
 
 
   // @Input ({required: true}) id! : string ;
@@ -44,9 +49,12 @@ export class TasksComponent  {
     // console.log('Selected user:', this.id);
   }
   onTaskCompleted(taskId: string) {
-    // Handle task completion logic here
-    console.log(`Task with ID ${taskId} completed.`);
-  }
+  this.tasks = this.tasks.map(t =>
+    t.id === taskId ? { ...t, status: 'completed' } : t
+  );
+  localStorage.setItem('tasks', JSON.stringify(this.tasks));
+}
+
   onTaskDeleted(taskId: string) {
     // Handle task deletion logic here
     console.log(`Task with ID ${taskId} deleted.`);

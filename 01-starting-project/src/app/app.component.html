@@ -8,7 +8,7 @@
     } -->
 
     <li *ngFor="let user of users" >
-      <app-user [user]="user" (select)="onSelectUser($event)" />
+      <app-user [user]="user" (select)="onSelectUser($event)"  [isSelected]="user.id === selectedUserId" />
     </li>
   </ul>
 
