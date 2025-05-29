@@ -2,11 +2,12 @@ import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../Models/User.model';
 import { TaskComponent } from './task/task.component';
 import { Dummy_Tasks } from '../dummy-tasks';
+import { NewTaskComponent } from "./new-task/new-task.component";
 
 @Component({
   selector: 'app-Tasks',
   standalone: true,
-  imports: [TaskComponent],
+  imports: [TaskComponent, NewTaskComponent],
   templateUrl: './Tasks.component.html',
   styleUrls: ['./Tasks.component.css']
 })
@@ -23,7 +24,8 @@ export class TasksComponent implements OnInit {
   // @Input ({required: true}) avatar! : string ;
   // @Input ({required: true}) name! : string ;
 
-  @Input({required: true}) user :User
+  @Input({required: true}) user :User;
+  isAddingTask = false;
   // {
   //   id: string;
   //   avatar: string;
@@ -68,6 +70,10 @@ export class TasksComponent implements OnInit {
     //   return this.tasks;
     // }
     return this.tasks.filter((task) => task.userId === this.user.id);
+  }
+  onStartAddTask() {
+    this.isAddingTask = true;
+
   }
 
 }
