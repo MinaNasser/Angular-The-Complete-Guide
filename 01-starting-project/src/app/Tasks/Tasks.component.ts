@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../Models/User.model';
 import { TaskComponent } from './task/task.component';
-import { Dummy_Tasks } from '../dummy-tasks';
 import { NewTaskComponent } from './new-task/new-task.component';
+import { task } from '../Models/Task.model';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-Tasks',
@@ -12,13 +13,28 @@ import { NewTaskComponent } from './new-task/new-task.component';
   styleUrls: ['./Tasks.component.css'],
 })
 export class TasksComponent implements OnInit {
-  tasks = Dummy_Tasks;
+  tasks:task[] = []; // Initialize tasks as an empty array
   @Input({required: true}) user :User;
   isAddingTask: boolean = false;
   ngOnInit() {
-    const storedTasks = localStorage.getItem('tasks');
-    this.tasks = storedTasks ? JSON.parse(storedTasks) : Dummy_Tasks;
+  const storedTasks = localStorage.getItem('tasks');
+
+  if (storedTasks) {
+    this.tasks = JSON.parse(storedTasks);
+  } else {
+    this.http.get<task[]>('assets/dummy-tasks.json').subscribe({
+      next: (data) => {
+        this.tasks = data;
+        // Optional: حفظها في localStorage لو حبيت
+        localStorage.setItem('tasks', JSON.stringify(this.tasks));
+      },
+      error: (err) => {
+        console.error('Failed to load tasks:', err);
+      }
+    });
   }
+}
+
 
   // @Input ({required: true}) id! : string ;
   // @Input ({required: true}) avatar! : string ;
@@ -29,7 +45,7 @@ export class TasksComponent implements OnInit {
   //   avatar: string;
   //   name: string;
   // } ; // Assuming user is an object with properties like id, avatar, name
-  constructor() {
+  constructor(private http: HttpClient) {
     // Initialization logic can go here if needed
     this.user = {
       id: '',
@@ -72,4 +88,11 @@ export class TasksComponent implements OnInit {
   onCancelAddTask() {
     this.isAddingTask = false;
   }
+  onTaskCreated(newTask: any) {
+  newTask.userId = this.user.id;
+  this.tasks.push(newTask);
+  localStorage.setItem('tasks', JSON.stringify(this.tasks)); // ✅ مهم
+  this.isAddingTask = false;
+}
+
 }
