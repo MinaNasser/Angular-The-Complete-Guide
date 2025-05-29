@@ -2,30 +2,28 @@ import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../Models/User.model';
 import { TaskComponent } from './task/task.component';
 import { Dummy_Tasks } from '../dummy-tasks';
-import { NewTaskComponent } from "./new-task/new-task.component";
+import { NewTaskComponent } from './new-task/new-task.component';
 
 @Component({
   selector: 'app-Tasks',
   standalone: true,
   imports: [TaskComponent, NewTaskComponent],
   templateUrl: './Tasks.component.html',
-  styleUrls: ['./Tasks.component.css']
+  styleUrls: ['./Tasks.component.css'],
 })
 export class TasksComponent implements OnInit {
-  tasks =Dummy_Tasks;
-
+  tasks = Dummy_Tasks;
+  @Input({required: true}) user :User;
+  isAddingTask: boolean = false;
   ngOnInit() {
-  const storedTasks = localStorage.getItem('tasks');
-  this.tasks = storedTasks ? JSON.parse(storedTasks) : Dummy_Tasks;
-}
-
+    const storedTasks = localStorage.getItem('tasks');
+    this.tasks = storedTasks ? JSON.parse(storedTasks) : Dummy_Tasks;
+  }
 
   // @Input ({required: true}) id! : string ;
   // @Input ({required: true}) avatar! : string ;
   // @Input ({required: true}) name! : string ;
 
-  @Input({required: true}) user :User;
-  isAddingTask = false;
   // {
   //   id: string;
   //   avatar: string;
@@ -36,7 +34,7 @@ export class TasksComponent implements OnInit {
     this.user = {
       id: '',
       avatar: '',
-      name: ''
+      name: '',
     };
   }
   get imagePath() {
@@ -51,11 +49,11 @@ export class TasksComponent implements OnInit {
     // console.log('Selected user:', this.id);
   }
   onTaskCompleted(taskId: string) {
-  this.tasks = this.tasks.map(t =>
-    t.id === taskId ? { ...t, status: 'completed' } : t
-  );
-  localStorage.setItem('tasks', JSON.stringify(this.tasks));
-}
+    this.tasks = this.tasks.map((t) =>
+      t.id === taskId ? { ...t, status: 'completed' } : t
+    );
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
+  }
 
   onTaskDeleted(taskId: string) {
     // Handle task deletion logic here
@@ -65,15 +63,13 @@ export class TasksComponent implements OnInit {
     // Handle task editing logic here
     console.log(`Task with ID ${taskId} edited.`);
   }
-   get filteredTasks() {
-    // if (!this.user.id) {
-    //   return this.tasks;
-    // }
+  get filteredTasks() {
     return this.tasks.filter((task) => task.userId === this.user.id);
   }
   onStartAddTask() {
     this.isAddingTask = true;
-
   }
-
+  onCancelAddTask() {
+    this.isAddingTask = false;
+  }
 }

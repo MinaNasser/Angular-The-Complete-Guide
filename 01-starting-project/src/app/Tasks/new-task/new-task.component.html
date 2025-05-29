@@ -1,1 +1,26 @@
-<p>new-task works!</p>
+<div class="backdrop" (click)="onCancel()"></div>
+<dialog open>
+  <h2>Add Task</h2>
+  <form >
+    <p>
+      <label for="title">Title</label>
+      <input [(ngModel)]="inputTask.title" type="text" id="title" name="title" />
+    </p>
+
+    <p>
+      <label for="summary">Summary</label>
+      <textarea [(ngModel)]="inputTask.summary" id="summary" rows="5" name="summary"></textarea>
+    </p>
+
+    <p>
+      <label for="due-date">Due Date</label>
+      <input [(ngModel)]="inputTask.dueDate" type="date" id="due-date" name="due-date" />
+    </p>
+    <!-- add status  -->
+
+    <p class="actions">
+      <button type="button" (click)="onCancel()">Cancel</button>
+      <button type="submit">Create</button>
+    </p>
+  </form>
+</dialog>
