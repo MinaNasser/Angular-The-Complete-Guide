@@ -23,8 +23,14 @@ export class TaskComponent implements OnInit {
     };
   }
 
+
+
+
   ngOnInit() {
   }
+
+
+  
   onEditTask() {
     console.log(`Task with ID ${this.task.id} edited.`);
   }
