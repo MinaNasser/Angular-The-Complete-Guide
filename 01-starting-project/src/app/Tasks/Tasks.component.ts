@@ -1,9 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from '../Models/User.model';
-import { TaskComponent } from './task/task.component';
-import { NewTaskComponent } from './new-task/new-task.component';
-import { task } from '../Models/Task.model';
 import { HttpClient } from '@angular/common/http';
+
+import { task } from '../Models/Task.model';
+import { User } from '../Models/User.model';
+
+import { NewTaskComponent } from './new-task/new-task.component';
+import { TaskComponent } from './task/task.component';
 
 @Component({
   selector: 'app-Tasks',
@@ -88,7 +90,7 @@ export class TasksComponent implements OnInit {
   onCancelAddTask() {
     this.isAddingTask = false;
   }
-  onTaskCreated(newTask: any) {
+  onTaskCreated(newTask: task) {
   newTask.userId = this.user.id;
   this.tasks.push(newTask);
   localStorage.setItem('tasks', JSON.stringify(this.tasks)); // ✅ مهم
