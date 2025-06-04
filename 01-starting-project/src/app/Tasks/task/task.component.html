@@ -1,7 +1,7 @@
 <app-card>
   <article>
     <h2>{{task.title}}</h2>
-    <time>{{task.dueDate}}</time>
+    <p>{{task.dueDate | date: 'dd/MM/yyyy'}}</p>
     <p>{{task.summary}}</p>
     <p>Status: {{task.status}}</p>
     <div class="actions">
