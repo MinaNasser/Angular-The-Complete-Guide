@@ -6,4 +6,7 @@ export interface task {
   dueDate: string;
   status: string; // 'pending' | 'completed'
 
+
+
+
 }
