@@ -1,12 +1,15 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Task } from 'zone.js/lib/zone-impl';
+import { DatePipe } from '@angular/common';
+
 import { task } from '../../Models/Task.model';
+import { CardComponent } from "../../shared/card/card.component";
 
 @Component({
   selector: 'app-task',
   standalone: true,
   templateUrl: './task.component.html',
-  styleUrls: ['./task.component.css']
+  styleUrls: ['./task.component.css'],
+  imports: [CardComponent,DatePipe]
 })
 export class TaskComponent implements OnInit {
 
@@ -18,7 +21,7 @@ export class TaskComponent implements OnInit {
       userId: '',
       title: '',
       summary: '',
-      dueDate: '',
+      dueDate: new Date(),
       status: 'pending',
     };
   }
@@ -30,7 +33,7 @@ export class TaskComponent implements OnInit {
   }
 
 
-  
+
   onEditTask() {
     console.log(`Task with ID ${this.task.id} edited.`);
   }
