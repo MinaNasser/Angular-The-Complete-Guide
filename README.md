@@ -1,9 +1,8 @@
 # Angular-The-Complete-Guide
 
-npm i
+npm install
+ng serve
 
-
-# Angular Guide
 
 
 
