@@ -42,7 +42,7 @@ export class TasksComponent implements OnInit {
     //   this.http.get<task[]>('assets/dummy-tasks.json').subscribe({
     //     next: (data) => {
     //       this.tasks = data;
-    //       // Optional: حفظها في localStorage لو حبيت
+    //       // Optional:  في localStorage لو    el tasks
     //       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     //     },
     //     error: (err) => {
