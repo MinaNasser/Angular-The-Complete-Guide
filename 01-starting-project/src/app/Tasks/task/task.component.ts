@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
+import { TasksService } from '../tasks.service';
 import { task } from '../../Models/Task.model';
 import { CardComponent } from "../../shared/card/card.component";
 
@@ -15,7 +16,7 @@ export class TaskComponent implements OnInit {
 
   @Input({required: true}) task! :task;
   @Output() Complete = new EventEmitter<string>();
-  constructor() {
+  constructor( private taskService: TasksService) {
     this.task = {
       id: '',
       userId: '',
