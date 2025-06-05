@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+import { TasksService } from '../tasks.service';
 import { task } from '../../Models/Task.model';
 
 @Component({
@@ -15,6 +16,8 @@ import { task } from '../../Models/Task.model';
   styleUrl: './new-task.component.css'
 })
 export class NewTaskComponent implements OnInit {
+  constructor(private taskService: TasksService) { }
+
   ngOnInit(): void {
     this.inputTask = {
       id: '',
@@ -34,12 +37,16 @@ export class NewTaskComponent implements OnInit {
 
   onCreateTask() {
     this.TaskCreated.emit(this.inputTask);
+
     this.inputTask.id = this.nextId;
     this.nextId = String(Number(this.nextId.slice(1)) + 1);
     this.inputTask.title = this.inputTask.title.trim();
     this.inputTask.summary = this.inputTask.summary.trim();
     this.inputTask.dueDate = this.inputTask.dueDate;
     this.inputTask.status = 'pending';
+    this.inputTask.userId = this.userId;
+    
+    this.taskService.addTask(this.inputTask);
   }
 
 
