@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 import { task } from '../Models/Task.model';
 import { User } from '../Models/User.model';
@@ -52,7 +51,7 @@ export class TasksComponent implements OnInit {
     //   });
     // }
 
-    this.taskService.getTasks().subscribe((tasks) => {
+    this.taskService.getTasks().subscribe((tasks : task[]) => {
       this.tasks = tasks;
     });
 
@@ -95,8 +94,8 @@ export class TasksComponent implements OnInit {
     console.log(`Task with ID ${taskId} edited.`);
   }
   get filteredTasks() {
-    this.taskService.getUserTasks(this.user.id).subscribe((tasks) => {
-      this.filteredTasksByUser = tasks;
+    this.taskService.getUserTasks(this.user.id).subscribe((tas : task[]) => {
+      this.filteredTasksByUser = tas;
     });
 
     return this.filteredTasksByUser;

@@ -11,7 +11,8 @@ import { task } from '../Models/Task.model';
 export class TasksService {
   tasks: task[] = []; // Initialize tasks as an empty array
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+
   ) { }
   // Method to get all tasks from  file or localStorage
 
@@ -51,15 +52,16 @@ export class TasksService {
     }
     return of([]);
   }
-  addTask(newTask: task): void {
+  public addTask(newTask: task): void {
     this.tasks.push(newTask);
     this.saveTasks(this.tasks);
   }
-  deleteTask(taskId: string): void {
+
+ public deleteTask(taskId: string): void {
     this.tasks = this.tasks.filter(task => task.id !== taskId);
     this.saveTasks(this.tasks);
   }
-  updateTask(updatedTask: task): void {
+  public updateTask(updatedTask: task): void {
     const index = this.tasks.findIndex(task => task.id === updatedTask.id);
     if (index !== -1) {
       this.tasks[index] = updatedTask;

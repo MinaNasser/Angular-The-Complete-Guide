@@ -45,7 +45,7 @@ export class NewTaskComponent implements OnInit {
     this.inputTask.dueDate = this.inputTask.dueDate;
     this.inputTask.status = 'pending';
     this.inputTask.userId = this.userId;
-    
+
     this.taskService.addTask(this.inputTask);
   }
 
