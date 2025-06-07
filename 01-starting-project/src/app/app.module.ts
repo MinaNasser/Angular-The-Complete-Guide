@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {  provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
+import { share } from 'rxjs';
+
 import { AppComponent } from './app.component';
 
 import { TasksComponent } from './Tasks/Tasks.component';
@@ -13,6 +15,7 @@ import { UserComponent } from './user/user.component';
 import { NewTaskComponent } from './Tasks/new-task/new-task.component';
 import { TaskComponent } from './Tasks/task/task.component';
 import { CardComponent } from './shared/card/card.component';
+import { SharedModule } from './shared/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,6 @@ import { CardComponent } from './shared/card/card.component';
     UserComponent,
     TasksComponent,
     TaskComponent,
-    CardComponent,
     NewTaskComponent,
 
   ],
@@ -30,20 +32,12 @@ import { CardComponent } from './shared/card/card.component';
     FormsModule,
     BrowserModule,
     DatePipe,
-
-
-
-
-
-
+    SharedModule
   ],
   providers: [TasksService ,
     provideHttpClient(
       withInterceptorsFromDi(),
     ),
-
-
-
    ], // ✅ هنا نضع الخدمات
   bootstrap: [AppComponent]
 })
