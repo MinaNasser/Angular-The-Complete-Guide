@@ -3,7 +3,7 @@ form {
   max-width: 30rem;
   margin: 2rem auto;
   border-radius: 4px;
-  background: linear-gradient(180deg, #307e6c, #2b996d);
+  background: linear-gradient(180deg, #254d3b, #0aa466);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -20,15 +20,16 @@ label {
   font-size: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #fefffe;
 }
 
 input {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #76c0ae;
+  border: 1px solid #67a897;
   border-radius: 0.25rem;
   background-color: transparent;
-  color: #c2e9e0;
+  color: #a6b10b;
   font-size: 1rem;
 }
 
