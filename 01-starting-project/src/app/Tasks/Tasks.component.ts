@@ -1,3 +1,130 @@
+// import { Component, Input, OnInit } from '@angular/core';
+
+// import { task } from '../Models/Task.model';
+// import { User } from '../Models/User.model';
+
+// import { TasksService } from './tasks.service';
+
+
+// @Component({
+//   selector: 'app-Tasks',
+//   templateUrl: './Tasks.component.html',
+//   styleUrls: ['./Tasks.component.css'],
+// })
+// export class TasksComponent implements OnInit {
+//   tasks: task[] = []; // Initialize tasks as an empty array
+//   @Input({ required: true }) user: User;
+//   isAddingTask: boolean = false;
+//   filteredTasksByUser: task[] = []; // Initialize filteredTasks as an empty array
+
+
+//   /**
+//    *
+//    */
+//   constructor(private taskService: TasksService) {
+//     this.user = {
+//       id: '',
+//       name: '',
+//       avatar: '',
+//     };
+//   }
+//   ngOnInit() {
+//   this.taskService.getTasks().subscribe((tasks: task[]) => {
+//     this.tasks = tasks;
+//     this.filterUserTasks()  ; // استدعاء لتصفية مهام المستخدم
+//   });
+// }
+//     filterUserTasks() {
+//       this.filteredTasksByUser = this.tasks.filter(t => t.userId === this.user.id);
+//     }
+
+
+//   // ngOnInit() {
+//   //   // const storedTasks = localStorage.getItem('tasks');
+
+//   //   // if (storedTasks) {
+//   //   //   this.tasks = JSON.parse(storedTasks);
+//   //   // } else {
+//   //   //   this.http.get<task[]>('assets/dummy-tasks.json').subscribe({
+//   //   //     next: (data) => {
+//   //   //       this.tasks = data;
+//   //   //       // Optional:  في localStorage لو    el tasks
+//   //   //       localStorage.setItem('tasks', JSON.stringify(this.tasks));
+//   //   //     },
+//   //   //     error: (err) => {
+//   //   //       console.error('Failed to load tasks:', err);
+//   //   //     }
+//   //   //   });
+//   //   // }
+
+//   //   this.taskService.getTasks().subscribe((tasks : task[]) => {
+//   //     this.tasks = tasks;
+//   //   });
+
+//   // }
+
+//   // @Input ({required: true}) id! : string ;
+//   // @Input ({required: true}) avatar! : string ;
+//   // @Input ({required: true}) name! : string ;
+
+//   // {
+//   //   id: string;
+//   //   avatar: string;
+//   //   name: string;
+//   // } ; // Assuming user is an object with properties like id, avatar, name
+//   // constructor() {
+//   //   // Initialization logic can go here if needed
+//   //   // this.user = {
+//   //   //   id: '',
+//   //   //   avatar: '',
+//   //   //   name: '',
+//   //   // };
+//   // }
+//   get imagePath() {
+//     return `assets/users/${this.user.avatar}`;
+//   }
+//   onSelectUser() {}
+//   onTaskCompleted(taskId: string) {
+//     this.tasks = this.tasks.map((t) =>
+//       t.id === taskId ? { ...t, status: 'completed' } : t
+//     );
+//     localStorage.setItem('tasks', JSON.stringify(this.tasks));
+//   }
+
+//   onTaskDeleted(taskId: string) {
+//     // Handle task deletion logic here
+//     console.log(`Task with ID ${taskId} deleted.`);
+//   }
+//   onTaskEdited(taskId: string) {
+//     // Handle task editing logic here
+//     console.log(`Task with ID ${taskId} edited.`);
+//   }
+//   get filteredTasks() {
+//     this.taskService.getUserTasks(this.user.id).subscribe((tas : task[]) => {
+//       this.filteredTasksByUser = tas;
+//     });
+
+//     return this.filteredTasksByUser;
+//   }
+//   onStartAddTask() {
+//     this.isAddingTask = true;
+//   }
+//   onCancelAddTask() {
+//     this.isAddingTask = false;
+//   }
+//   // onTaskCreated(newTask: task) {
+//   //   newTask.userId = this.user.id;
+//   //   // this.tasks.push(newTask);
+//   //   // localStorage.setItem('tasks', JSON.stringify(this.tasks)); // ✅ مهم
+//   //   this.isAddingTask = false;
+//   // }
+//   onTaskCreated(newTask: task) {
+//     this.tasks.push(newTask); // تحديث القائمة كاملة
+//     this.filterUserTasks(); // إعادة تصفية المهام
+//     this.isAddingTask = false;
+//   }
+
+// }
 import { Component, Input, OnInit } from '@angular/core';
 
 import { task } from '../Models/Task.model';
@@ -5,107 +132,72 @@ import { User } from '../Models/User.model';
 
 import { TasksService } from './tasks.service';
 
-
 @Component({
-  selector: 'app-Tasks',
-  templateUrl: './Tasks.component.html',
-  styleUrls: ['./Tasks.component.css'],
+  selector: 'app-tasks',
+  templateUrl: './tasks.component.html',
+  styleUrls: ['./tasks.component.css'],
 })
 export class TasksComponent implements OnInit {
-  tasks: task[] = []; // Initialize tasks as an empty array
-  @Input({ required: true }) user: User;
+  tasks: task[] = [];
+  filteredTasksByUser: task[] = [];
   isAddingTask: boolean = false;
-  filteredTasksByUser: task[] = []; // Initialize filteredTasks as an empty array
 
+  @Input({ required: true }) user!: User;
 
-  /**
-   *
-   */
-  constructor(private taskService: TasksService) {
-    this.user = {
-      id: '',
-      name: '',
-      avatar: '',
-    };
-  }
+  constructor(private taskService: TasksService) {}
 
   ngOnInit() {
-    // const storedTasks = localStorage.getItem('tasks');
-
-    // if (storedTasks) {
-    //   this.tasks = JSON.parse(storedTasks);
-    // } else {
-    //   this.http.get<task[]>('assets/dummy-tasks.json').subscribe({
-    //     next: (data) => {
-    //       this.tasks = data;
-    //       // Optional:  في localStorage لو    el tasks
-    //       localStorage.setItem('tasks', JSON.stringify(this.tasks));
-    //     },
-    //     error: (err) => {
-    //       console.error('Failed to load tasks:', err);
-    //     }
-    //   });
-    // }
-
-    this.taskService.getTasks().subscribe((tasks : task[]) => {
-      this.tasks = tasks;
-    });
-
+    this.loadTasksForUser();
   }
 
-  // @Input ({required: true}) id! : string ;
-  // @Input ({required: true}) avatar! : string ;
-  // @Input ({required: true}) name! : string ;
+  loadTasksForUser() {
+    this.taskService.getUserTasks(this.user.id).subscribe({
+      next: (tasks) => {
+        this.filteredTasksByUser = tasks;
+        console.log('Tasks loaded:', this.filteredTasksByUser);
 
-  // {
-  //   id: string;
-  //   avatar: string;
-  //   name: string;
-  // } ; // Assuming user is an object with properties like id, avatar, name
-  // constructor() {
-  //   // Initialization logic can go here if needed
-  //   // this.user = {
-  //   //   id: '',
-  //   //   avatar: '',
-  //   //   name: '',
-  //   // };
-  // }
+      },
+      error: (err) => console.error('Error loading user tasks:', err),
+    });
+  }
+
   get imagePath() {
     return `assets/users/${this.user.avatar}`;
   }
-  onSelectUser() {}
-  onTaskCompleted(taskId: string) {
-    this.tasks = this.tasks.map((t) =>
-      t.id === taskId ? { ...t, status: 'completed' } : t
-    );
-    localStorage.setItem('tasks', JSON.stringify(this.tasks));
-  }
 
-  onTaskDeleted(taskId: string) {
-    // Handle task deletion logic here
-    console.log(`Task with ID ${taskId} deleted.`);
-  }
-  onTaskEdited(taskId: string) {
-    // Handle task editing logic here
-    console.log(`Task with ID ${taskId} edited.`);
-  }
-  get filteredTasks() {
-    this.taskService.getUserTasks(this.user.id).subscribe((tas : task[]) => {
-      this.filteredTasksByUser = tas;
-    });
-
-    return this.filteredTasksByUser;
-  }
   onStartAddTask() {
     this.isAddingTask = true;
   }
+
   onCancelAddTask() {
     this.isAddingTask = false;
   }
+
   onTaskCreated(newTask: task) {
     newTask.userId = this.user.id;
-    this.tasks.push(newTask);
-    localStorage.setItem('tasks', JSON.stringify(this.tasks)); // ✅ مهم
+    this.taskService.addTask(newTask);
     this.isAddingTask = false;
+
+    // إعادة تحميل المهام بعد الإضافة
+    this.loadTasksForUser();
+  }
+
+  onTaskCompleted(taskId: string) {
+    const taskToComplete = this.tasks.find(t => t.id === taskId);
+    if (taskToComplete) {
+      taskToComplete.status = 'completed';
+      this.taskService.updateTask(taskToComplete);
+      this.loadTasksForUser();
+    }
+  }
+
+  onTaskDeleted(taskId: string) {
+    this.taskService.deleteTask(taskId);
+    this.loadTasksForUser();
+  }
+
+  onTaskEdited(updatedTask: task) {
+    this.taskService.updateTask(updatedTask);
+    this.loadTasksForUser();
   }
 }

@@ -22,7 +22,7 @@
   </div>
   } -->
   <div *ngIf="selectedUser else fillback"   class="mt-5">
-    <app-Tasks [user]="selectedUser" />
+    <app-tasks [user]="selectedUser" />
   </div>
   <ng-template #fillback>
     <div class="text-center">

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-
-import { share } from 'rxjs';
+import { CommonModule, DatePipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { TasksComponent } from '../Tasks.component';
 import { NewTaskComponent } from '../new-task/new-task.component';
@@ -14,6 +14,12 @@ import { SharedModule } from '../../shared/shared/shared.module';
     TasksComponent,
     TaskComponent,
     NewTaskComponent,
+  ],
+  imports: [
+    SharedModule,
+    DatePipe,
+    FormsModule,
+    CommonModule
   ],
   exports: [
     TasksComponent,

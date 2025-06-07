@@ -10,7 +10,7 @@
   </menu>
 
   <ul>
-    @for (task of filteredTasks; track task.id) {
+    @for (task of filteredTasksByUser; track task.id) {
       <li>
       <app-task  [task]="task" (Complete)="onTaskCompleted($event)"/>
     </li>

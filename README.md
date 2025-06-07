@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+# Backend Server Setup
+
+This Angular project uses a separate backend server to handle tasks data via a REST API.
+
+## Backend Server (Node.js + Express)
+
+### 1. Setup
+
+Navigate to the backend folder (or create one):
+
+```bash
+mkdir backend
+cd backend
+npm init -y
+npm install express cors body-parser
+
+```
+### 2. Create a server.js file
+
+### 3. Start the server
+```bash
+node server.js
+```

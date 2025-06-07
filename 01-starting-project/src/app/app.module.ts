@@ -17,14 +17,12 @@ import { TaskComponent } from './Tasks/task/task.component';
 import { TasksModule } from './Tasks/tasks/tasks.module';
 import { CardComponent } from './shared/card/card.component';
 import { SharedModule } from './shared/shared/shared.module';
+import { UserModule } from './user/user/user.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    UserComponent,
-
-
   ],
   imports: [
     CommonModule,
@@ -32,7 +30,8 @@ import { SharedModule } from './shared/shared/shared.module';
     BrowserModule,
     DatePipe,
     SharedModule,
-    TasksModule
+    TasksModule,
+    UserModule
   ],
   providers: [TasksService ,
     provideHttpClient(
