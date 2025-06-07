@@ -5,13 +5,9 @@ import { User } from '../Models/User.model';
 
 import { TasksService } from './tasks.service';
 
-import { NewTaskComponent } from './new-task/new-task.component';
-import { TaskComponent } from './task/task.component';
 
 @Component({
   selector: 'app-Tasks',
-  standalone: true,
-  imports: [TaskComponent, NewTaskComponent],
   templateUrl: './Tasks.component.html',
   styleUrls: ['./Tasks.component.css'],
 })
