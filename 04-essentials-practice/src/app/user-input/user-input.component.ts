@@ -1,14 +1,10 @@
-import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component } from '@angular/core';
 
 import { InvestmentResultsService } from '../investment-results.service';
 import { UserInput } from '../Models/userInput';
 
 @Component({
   selector: 'app-user-input',
-  standalone: true,
-  imports: [FormsModule, CommonModule],
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.css',
 })
