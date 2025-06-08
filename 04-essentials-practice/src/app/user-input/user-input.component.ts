@@ -14,7 +14,7 @@ import { UserInput } from '../Models/userInput';
 export class UserInputComponent {
   @Output() calculate = new EventEmitter<UserInput>();
 
-  userInput : UserInput ;
+  userInput : UserInput;
 
   constructor() {
     this.userInput = {
@@ -29,7 +29,15 @@ export class UserInputComponent {
     // this.calculateInvestmentResults();
     // console.log(this.calculateInvestmentResults());
     // console.log(this.userInput);
+
+
+    this.userInput = {
+      initialInvestment: 0,
+      annualInvestment: 0,
+      expectedReturn: 0,
+      duration: 0,
+    };
   }
 
-  
+
 }

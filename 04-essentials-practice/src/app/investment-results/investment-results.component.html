@@ -1,1 +1,42 @@
-<p>investment-results works!</p>
+@if (investmentResults.length < 0) {
+<p class="center">Please Enter Some Values and Click Calculate</p>
+
+} @else {
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Savings End of Year</th>
+      <th>Interest (Year)</th>
+      <th>Interest (Cumulative)</th>
+      <th>Total Interest</th>
+      <th>Total Investment</th>
+
+
+
+    </tr>
+  </thead>
+  <tbody>
+    @for (result of investmentResults; track $index) {
+      <tr>
+        <td>{{ result.year }}</td>
+        <td>{{ result.valueEndOfYear | currency: "USD" }}</td>
+        <td>{{ result.interest | currency: "USD" }}</td>
+        <td>{{ result.totalInterest | currency: "USD" }}</td>
+        <td>{{ result.totalAmountInvested | currency: "USD" }}</td>
+        <td>{{ result.annualInvestment | currency: "USD" }}</td>
+        <td>{{ result.totalAmountInvested | currency: "USD" }}</td>
+      </tr>
+    }
+    <!-- <tr *ngFor="let result of investmentResults; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ result.valueEndOfYear | currency: "USD" }}</td>
+      <td>{{ result.interest | currency: "USD" }}</td>
+      <td>{{ result.totalInterest | currency: "USD" }}</td>
+      <td>{{ result.totalAmountInvested | currency: "USD" }}</td>
+      <td>{{ result.annualInvestment | currency: "USD" }}</td>
+      <td>{{ result.totalAmountInvested | currency: "USD" }}</td>
+    </tr> -->
+  </tbody>
+</table>
+}
