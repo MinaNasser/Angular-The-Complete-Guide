@@ -4,17 +4,17 @@
 
   <div id="dashboard">
 
-    <div class="dashboard-item">
+    <app-dashboard-item [title]="'Server Status'" [image]="{url: 'status.png', alt: 'Server Status'}">
       <app-server-status></app-server-status>
-    </div>
+    </app-dashboard-item>
 
-    <div class="dashboard-item">
+    <app-dashboard-item [title]="'Traffic'" [image]="{url: 'globe.png', alt: 'A globe with Traffic'}">
       <app-traffic></app-traffic>
-    </div>
+    </app-dashboard-item>
 
-    <div class="dashboard-item">
+    <app-dashboard-item [title]="'Tickets'" [image]="{url: 'list.png', alt: 'Tickets list'}">
       <app-tickets></app-tickets>
-    </div>
+    </app-dashboard-item>
 
   </div>
 
