@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { MyButtonComponent } from "../../../shared/my-button/my-button.component";
 
 @Component({
@@ -9,5 +10,6 @@ import { MyButtonComponent } from "../../../shared/my-button/my-button.component
   styleUrl: './new-ticket.component.css'
 })
 export class NewTicketComponent {
+   
 
 }
