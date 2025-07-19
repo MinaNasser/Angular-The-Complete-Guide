@@ -7,12 +7,12 @@ import { image } from '../../Models/image.model';
   standalone: true,
   imports: [],
   templateUrl: './dashboard-item.component.html',
-  styleUrl: './dashboard-item.component.css'
+  styleUrl: './dashboard-item.component.css',
 })
 export class DashboardItemComponent {
-  @Input({required: true})  image : image = {
+  @Input({ required: true }) image: image = {
     url: '',
-    alt: 'Image not found'
-  }
-  @Input({required: true})  title : string = '';
+    alt: 'Image not found',
+  };
+  @Input({ required: true }) title: string = '';
 }
