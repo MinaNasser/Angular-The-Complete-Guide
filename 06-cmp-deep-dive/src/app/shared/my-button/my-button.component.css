@@ -1,3 +1,4 @@
+/*
 button {
   display: inline-block;
   padding: 0.65rem 1.35rem;
@@ -21,5 +22,42 @@ button:hover {
 }
 
 button:hover .icon {
+  transform: translateX(4px);
+} */
+
+
+:host {
+  display: inline-block;
+}
+
+:host(button),
+:host(a),
+:host(input) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #691ebe;
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+:host(:hover) {
+  background-color: #551b98;
+}
+
+.icon {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+:host(:hover) .icon {
   transform: translateX(4px);
 }
