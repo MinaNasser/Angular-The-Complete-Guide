@@ -14,6 +14,8 @@ import {
   encapsulation: ViewEncapsulation.None,
   // host: {
   //   class: 'control',
+  //   '[class.control--required]': 'label.required',
+  //   '[class.control--invalid]': 'label.invalid',
   // },
 })
 export class ControlComponent {
