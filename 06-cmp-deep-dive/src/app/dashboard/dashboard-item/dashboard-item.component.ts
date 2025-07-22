@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 import { image } from '../../Models/image.model';
 
@@ -8,6 +8,10 @@ import { image } from '../../Models/image.model';
   imports: [],
   templateUrl: './dashboard-item.component.html',
   styleUrl: './dashboard-item.component.css',
+  // encapsulation: ViewEncapsulation.None,
+  // host: {
+  //   class: 'dashboard-item',
+  // },
 })
 export class DashboardItemComponent {
   @Input({ required: true }) image: image = {
