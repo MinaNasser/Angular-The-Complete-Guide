@@ -61,3 +61,41 @@ button:hover .icon {
 :host(:hover) .icon {
   transform: translateX(4px);
 }
+
+:host([disabled]) {
+  background-color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+:host([disabled]) .icon {
+  opacity: 0.5;
+}
+:host([type="submit"]) {
+  background-color: #28a745;
+}
+:host([type="submit"]:hover) {
+  background-color: #218838;
+}
+:host([type="reset"]) {
+  background-color: #dc3545;
+}
+:host([type="reset"]:hover) {
+  background-color: #c82333;
+}
+:host([type="button"]) {
+  background-color: #007bff;
+}
+:host([type="button"]:hover) {
+  background-color: #0069d9;
+}
+:host([type="link"]) {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+}
+:host([type="link"]:hover) {
+  color: #0056b3;
+}
+:host([type="link"]) .icon {
+  color: inherit;
+}
