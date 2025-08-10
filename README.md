@@ -1,3 +1,11 @@
+<!-- Archtuer  Link to tree.md  -->
+
+# Angular Projects Architecture
+
+<!-- Link to tree.md -->
+
+[![Tree](https://img.shields.io/badge/Tree-View-blue)](Tree.md)
+
 # Essentials
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
@@ -26,8 +34,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
-
 # Backend Server Setup
 
 This Angular project uses a separate backend server to handle tasks data via a REST API.
@@ -45,19 +51,17 @@ npm init -y
 npm install express cors body-parser
 
 ```
+
 ### 2. Create a server.js file
 
 ### 3. Start the server
+
 ```bash
 node server.js
 ```
-### 4. Link  
+
+### 4. Link
+
 ```bash
 http://localhost:3000/tasks
 ```
-
-
-
-
-
-

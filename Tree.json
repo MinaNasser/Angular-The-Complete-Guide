@@ -1,0 +1,1489 @@
+{
+  "name": "Angular-The-Complete-Guide",
+  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide",
+  "type": "directory",
+  "children": [
+    {
+      "name": "01-starting-project",
+      "type": "directory",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project",
+      "children": [
+        {
+          "name": ".angular",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\.angular",
+          "children": [],
+          "icon": "📁"
+        },
+        {
+          "name": "src",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src",
+          "children": [
+            {
+              "name": "app",
+              "type": "directory",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app",
+              "children": [
+                {
+                  "name": "Models",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Models",
+                  "children": [
+                    {
+                      "name": "Task.model.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Models\\Task.model.ts",
+                      "icon": "📄"
+                    },
+                    {
+                      "name": "User.model.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Models\\User.model.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "Tasks",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks",
+                  "children": [
+                    {
+                      "name": "new-task",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\new-task",
+                      "children": [
+                        {
+                          "name": "new-task.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\new-task\\new-task.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "new-task.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\new-task\\new-task.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "new-task.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\new-task\\new-task.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "task",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\task",
+                      "children": [
+                        {
+                          "name": "task.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\task\\task.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "task.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\task\\task.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "task.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\task\\task.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "tasks",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\tasks",
+                      "children": [
+                        {
+                          "name": "tasks.module.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\tasks\\tasks.module.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "Tasks.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\Tasks.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "Tasks.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\Tasks.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "Tasks.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\Tasks.component.ts",
+                      "icon": "📄"
+                    },
+                    {
+                      "name": "tasks.service.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\Tasks\\tasks.service.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "header",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\header",
+                  "children": [
+                    {
+                      "name": "header.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\header\\header.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "header.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\header\\header.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "header.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\header\\header.component.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "shared",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\shared",
+                  "children": [
+                    {
+                      "name": "card",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\shared\\card",
+                      "children": [
+                        {
+                          "name": "card.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\shared\\card\\card.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "card.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\shared\\card\\card.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "card.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\shared\\card\\card.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "shared",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\shared\\shared",
+                      "children": [
+                        {
+                          "name": "shared.module.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\shared\\shared\\shared.module.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "user",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\user",
+                  "children": [
+                    {
+                      "name": "user",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\user\\user",
+                      "children": [
+                        {
+                          "name": "user.module.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\user\\user\\user.module.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "user.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\user\\user.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "user.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\user\\user.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "user.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\user\\user.component.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "app.component.css",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\app.component.css",
+                  "icon": "🎨"
+                },
+                {
+                  "name": "app.component.html",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\app.component.html",
+                  "icon": "🌐"
+                },
+                {
+                  "name": "app.component.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\app.component.ts",
+                  "icon": "📄"
+                },
+                {
+                  "name": "app.module.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\app.module.ts",
+                  "icon": "📄"
+                },
+                {
+                  "name": "dummy-users.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\app\\dummy-users.ts",
+                  "icon": "📄"
+                }
+              ],
+              "icon": "📁"
+            },
+            {
+              "name": "assets",
+              "type": "directory",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets",
+              "children": [
+                {
+                  "name": "users",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\users",
+                  "children": [
+                    {
+                      "name": "user-1.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\users\\user-1.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-2.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\users\\user-2.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-3.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\users\\user-3.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-4.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\users\\user-4.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-5.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\users\\user-5.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-6.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\users\\user-6.jpg",
+                      "icon": "🖼️"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": ".gitkeep",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\.gitkeep",
+                  "icon": "📄"
+                },
+                {
+                  "name": "dummy-tasks.json",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\assets\\dummy-tasks.json",
+                  "icon": "📄"
+                }
+              ],
+              "icon": "📁"
+            },
+            {
+              "name": ".gitkeep",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\.gitkeep",
+              "icon": "📄"
+            },
+            {
+              "name": "favicon.ico",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\favicon.ico",
+              "icon": "🖼️"
+            },
+            {
+              "name": "index.html",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\index.html",
+              "icon": "🌐"
+            },
+            {
+              "name": "main.ts",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\main.ts",
+              "icon": "📄"
+            },
+            {
+              "name": "styles.css",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\src\\styles.css",
+              "icon": "🎨"
+            }
+          ],
+          "icon": "📁"
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\README.md",
+          "icon": "📖"
+        },
+        {
+          "name": "angular.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\angular.json",
+          "icon": "📄"
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\package.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.app.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\tsconfig.app.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\tsconfig.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.spec.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\01-starting-project\\tsconfig.spec.json",
+          "icon": "📄"
+        }
+      ],
+      "icon": "📁"
+    },
+    {
+      "name": "04-essentials-practice",
+      "type": "directory",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice",
+      "children": [
+        {
+          "name": ".angular",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\.angular",
+          "children": [],
+          "icon": "📁"
+        },
+        {
+          "name": "public",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\public",
+          "children": [
+            {
+              "name": "favicon.ico",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\public\\favicon.ico",
+              "icon": "🖼️"
+            }
+          ],
+          "icon": "📁"
+        },
+        {
+          "name": "src",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src",
+          "children": [
+            {
+              "name": "app",
+              "type": "directory",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app",
+              "children": [
+                {
+                  "name": "Models",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\Models",
+                  "children": [
+                    {
+                      "name": "investmentResults.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\Models\\investmentResults.ts",
+                      "icon": "📄"
+                    },
+                    {
+                      "name": "userInput.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\Models\\userInput.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "app",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\app",
+                  "children": [
+                    {
+                      "name": "app.module.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\app\\app.module.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "header",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\header",
+                  "children": [
+                    {
+                      "name": "header.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\header\\header.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "header.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\header\\header.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "header.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\header\\header.component.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "investment-results",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\investment-results",
+                  "children": [
+                    {
+                      "name": "investment-results.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\investment-results\\investment-results.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "investment-results.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\investment-results\\investment-results.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "investment-results.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\investment-results\\investment-results.component.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "user-input",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\user-input",
+                  "children": [
+                    {
+                      "name": "user-input",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\user-input\\user-input",
+                      "children": [
+                        {
+                          "name": "user-input.module.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\user-input\\user-input\\user-input.module.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "user-input.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\user-input\\user-input.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "user-input.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\user-input\\user-input.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "user-input.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\user-input\\user-input.component.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "app.component.html",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\app.component.html",
+                  "icon": "🌐"
+                },
+                {
+                  "name": "app.component.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\app.component.ts",
+                  "icon": "📄"
+                },
+                {
+                  "name": "investment-results.service.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\app\\investment-results.service.ts",
+                  "icon": "📄"
+                }
+              ],
+              "icon": "📁"
+            },
+            {
+              "name": "index.html",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\index.html",
+              "icon": "🌐"
+            },
+            {
+              "name": "main.ts",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\main.ts",
+              "icon": "📄"
+            },
+            {
+              "name": "styles.css",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\src\\styles.css",
+              "icon": "🎨"
+            }
+          ],
+          "icon": "📁"
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\README.md",
+          "icon": "📖"
+        },
+        {
+          "name": "angular.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\angular.json",
+          "icon": "📄"
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\package.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.app.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\tsconfig.app.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\tsconfig.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.spec.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\04-essentials-practice\\tsconfig.spec.json",
+          "icon": "📄"
+        }
+      ],
+      "icon": "📁"
+    },
+    {
+      "name": "05-debugging",
+      "type": "directory",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging",
+      "children": [
+        {
+          "name": ".angular",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\.angular",
+          "children": [],
+          "icon": "📁"
+        },
+        {
+          "name": "public",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\public",
+          "children": [
+            {
+              "name": "favicon.ico",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\public\\favicon.ico",
+              "icon": "🖼️"
+            }
+          ],
+          "icon": "📁"
+        },
+        {
+          "name": "src",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src",
+          "children": [
+            {
+              "name": "app",
+              "type": "directory",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app",
+              "children": [
+                {
+                  "name": "header",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\header",
+                  "children": [
+                    {
+                      "name": "header.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\header\\header.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "header.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\header\\header.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "header.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\header\\header.component.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "shared",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\shared",
+                  "children": [
+                    {
+                      "name": "card",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\shared\\card",
+                      "children": [
+                        {
+                          "name": "card.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\shared\\card\\card.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "card.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\shared\\card\\card.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "card.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\shared\\card\\card.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "tasks",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks",
+                  "children": [
+                    {
+                      "name": "new-task",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\new-task",
+                      "children": [
+                        {
+                          "name": "new-task.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\new-task\\new-task.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "new-task.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\new-task\\new-task.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "new-task.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\new-task\\new-task.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "task",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\task",
+                      "children": [
+                        {
+                          "name": "task.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\task\\task.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "task.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\task\\task.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "task.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\task\\task.component.ts",
+                          "icon": "📄"
+                        },
+                        {
+                          "name": "task.model.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\task\\task.model.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "tasks.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\tasks.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "tasks.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\tasks.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "tasks.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\tasks.component.ts",
+                      "icon": "📄"
+                    },
+                    {
+                      "name": "tasks.service.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\tasks\\tasks.service.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "user",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\user",
+                  "children": [
+                    {
+                      "name": "user.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\user\\user.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "user.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\user\\user.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "user.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\user\\user.component.ts",
+                      "icon": "📄"
+                    },
+                    {
+                      "name": "user.model.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\user\\user.model.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "app.component.css",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\app.component.css",
+                  "icon": "🎨"
+                },
+                {
+                  "name": "app.component.html",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\app.component.html",
+                  "icon": "🌐"
+                },
+                {
+                  "name": "app.component.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\app.component.ts",
+                  "icon": "📄"
+                },
+                {
+                  "name": "dummy-users.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\app\\dummy-users.ts",
+                  "icon": "📄"
+                }
+              ],
+              "icon": "📁"
+            },
+            {
+              "name": "assets",
+              "type": "directory",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets",
+              "children": [
+                {
+                  "name": "users",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\users",
+                  "children": [
+                    {
+                      "name": "user-1.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\users\\user-1.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-2.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\users\\user-2.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-3.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\users\\user-3.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-4.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\users\\user-4.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-5.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\users\\user-5.jpg",
+                      "icon": "🖼️"
+                    },
+                    {
+                      "name": "user-6.jpg",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\users\\user-6.jpg",
+                      "icon": "🖼️"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": ".gitkeep",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\assets\\.gitkeep",
+                  "icon": "📄"
+                }
+              ],
+              "icon": "📁"
+            },
+            {
+              "name": "favicon.ico",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\favicon.ico",
+              "icon": "🖼️"
+            },
+            {
+              "name": "index.html",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\index.html",
+              "icon": "🌐"
+            },
+            {
+              "name": "main.ts",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\main.ts",
+              "icon": "📄"
+            },
+            {
+              "name": "styles.css",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\src\\styles.css",
+              "icon": "🎨"
+            }
+          ],
+          "icon": "📁"
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\README.md",
+          "icon": "📖"
+        },
+        {
+          "name": "angular.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\angular.json",
+          "icon": "📄"
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\package.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.app.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\tsconfig.app.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\tsconfig.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.spec.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\05-debugging\\tsconfig.spec.json",
+          "icon": "📄"
+        }
+      ],
+      "icon": "📁"
+    },
+    {
+      "name": "06-cmp-deep-dive",
+      "type": "directory",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive",
+      "children": [
+        {
+          "name": ".angular",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\.angular",
+          "children": [],
+          "icon": "📁"
+        },
+        {
+          "name": "public",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\public",
+          "children": [
+            {
+              "name": "favicon.ico",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\public\\favicon.ico",
+              "icon": "🖼️"
+            },
+            {
+              "name": "globe.png",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\public\\globe.png",
+              "icon": "🖼️"
+            },
+            {
+              "name": "list.png",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\public\\list.png",
+              "icon": "🖼️"
+            },
+            {
+              "name": "logo.png",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\public\\logo.png",
+              "icon": "🖼️"
+            },
+            {
+              "name": "status.png",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\public\\status.png",
+              "icon": "🖼️"
+            }
+          ],
+          "icon": "📁"
+        },
+        {
+          "name": "src",
+          "type": "directory",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src",
+          "children": [
+            {
+              "name": "app",
+              "type": "directory",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app",
+              "children": [
+                {
+                  "name": "Models",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\Models",
+                  "children": [
+                    {
+                      "name": "image.model.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\Models\\image.model.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "dashboard",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard",
+                  "children": [
+                    {
+                      "name": "dashboard-item",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\dashboard-item",
+                      "children": [
+                        {
+                          "name": "dashboard-item.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\dashboard-item\\dashboard-item.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "dashboard-item.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\dashboard-item\\dashboard-item.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "dashboard-item.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\dashboard-item\\dashboard-item.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "server-status",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\server-status",
+                      "children": [
+                        {
+                          "name": "server-status.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\server-status\\server-status.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "server-status.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\server-status\\server-status.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "server-status.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\server-status\\server-status.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "tickets",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets",
+                      "children": [
+                        {
+                          "name": "new-ticket",
+                          "type": "directory",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\new-ticket",
+                          "children": [
+                            {
+                              "name": "new-ticket.component.css",
+                              "type": "file",
+                              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\new-ticket\\new-ticket.component.css",
+                              "icon": "🎨"
+                            },
+                            {
+                              "name": "new-ticket.component.html",
+                              "type": "file",
+                              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\new-ticket\\new-ticket.component.html",
+                              "icon": "🌐"
+                            },
+                            {
+                              "name": "new-ticket.component.ts",
+                              "type": "file",
+                              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\new-ticket\\new-ticket.component.ts",
+                              "icon": "📄"
+                            }
+                          ],
+                          "icon": "📁"
+                        },
+                        {
+                          "name": "ticket",
+                          "type": "directory",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\ticket",
+                          "children": [
+                            {
+                              "name": "ticket.component.css",
+                              "type": "file",
+                              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\ticket\\ticket.component.css",
+                              "icon": "🎨"
+                            },
+                            {
+                              "name": "ticket.component.html",
+                              "type": "file",
+                              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\ticket\\ticket.component.html",
+                              "icon": "🌐"
+                            },
+                            {
+                              "name": "ticket.component.ts",
+                              "type": "file",
+                              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\ticket\\ticket.component.ts",
+                              "icon": "📄"
+                            }
+                          ],
+                          "icon": "📁"
+                        },
+                        {
+                          "name": "tickets.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\tickets.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "tickets.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\tickets.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "tickets.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\tickets\\tickets.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "traffic",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\traffic",
+                      "children": [
+                        {
+                          "name": "traffic.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\traffic\\traffic.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "traffic.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\traffic\\traffic.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "traffic.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\dashboard\\traffic\\traffic.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "header",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\header",
+                  "children": [
+                    {
+                      "name": "header.component.css",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\header\\header.component.css",
+                      "icon": "🎨"
+                    },
+                    {
+                      "name": "header.component.html",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\header\\header.component.html",
+                      "icon": "🌐"
+                    },
+                    {
+                      "name": "header.component.ts",
+                      "type": "file",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\header\\header.component.ts",
+                      "icon": "📄"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "shared",
+                  "type": "directory",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared",
+                  "children": [
+                    {
+                      "name": "control",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\control",
+                      "children": [
+                        {
+                          "name": "control.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\control\\control.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "control.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\control\\control.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "control.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\control\\control.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    },
+                    {
+                      "name": "my-button",
+                      "type": "directory",
+                      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\my-button",
+                      "children": [
+                        {
+                          "name": "my-button.component.css",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\my-button\\my-button.component.css",
+                          "icon": "🎨"
+                        },
+                        {
+                          "name": "my-button.component.html",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\my-button\\my-button.component.html",
+                          "icon": "🌐"
+                        },
+                        {
+                          "name": "my-button.component.ts",
+                          "type": "file",
+                          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\shared\\my-button\\my-button.component.ts",
+                          "icon": "📄"
+                        }
+                      ],
+                      "icon": "📁"
+                    }
+                  ],
+                  "icon": "📁"
+                },
+                {
+                  "name": "app.component.html",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\app.component.html",
+                  "icon": "🌐"
+                },
+                {
+                  "name": "app.component.ts",
+                  "type": "file",
+                  "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\app\\app.component.ts",
+                  "icon": "📄"
+                }
+              ],
+              "icon": "📁"
+            },
+            {
+              "name": "index.html",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\index.html",
+              "icon": "🌐"
+            },
+            {
+              "name": "main.ts",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\main.ts",
+              "icon": "📄"
+            },
+            {
+              "name": "styles.css",
+              "type": "file",
+              "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\src\\styles.css",
+              "icon": "🎨"
+            }
+          ],
+          "icon": "📁"
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\README.md",
+          "icon": "📖"
+        },
+        {
+          "name": "angular.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\angular.json",
+          "icon": "📄"
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\package.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.app.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\tsconfig.app.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\tsconfig.json",
+          "icon": "📄"
+        },
+        {
+          "name": "tsconfig.spec.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\06-cmp-deep-dive\\tsconfig.spec.json",
+          "icon": "📄"
+        }
+      ],
+      "icon": "📁"
+    },
+    {
+      "name": "my-server",
+      "type": "directory",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\my-server",
+      "children": [
+        {
+          "name": "dummy-tasks.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\my-server\\dummy-tasks.json",
+          "icon": "📄"
+        },
+        {
+          "name": "package.json",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\my-server\\package.json",
+          "icon": "📄"
+        },
+        {
+          "name": "server.js",
+          "type": "file",
+          "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\my-server\\server.js",
+          "icon": "📄"
+        }
+      ],
+      "icon": "📁"
+    },
+    {
+      "name": "Angular-The-Complete-Guide.code-workspace",
+      "type": "file",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\Angular-The-Complete-Guide.code-workspace",
+      "icon": "📄"
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\README.md",
+      "icon": "📖"
+    },
+    {
+      "name": "Tree.md",
+      "type": "file",
+      "path": "d:\\work\\FreeLans work\\Udemy Angular\\Angular-The-Complete-Guide\\Tree.md",
+      "icon": "📝"
+    }
+  ],
+  "generated": "2025-08-10T22:43:38.766Z",
+  "generator": "FileTree Pro Extension",
+  "note": "Common build folders, dependencies, and temporary files are automatically excluded.",
+  "showIcons": true
+}
