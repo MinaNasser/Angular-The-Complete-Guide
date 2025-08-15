@@ -8,11 +8,11 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const FILE_PATH = './dummy-tasks.json';
+// التأكد من وجود الملف
+if (!fs.existsSync(FILE_PATH)) {
+  fs.writeFileSync(FILE_PATH, JSON.stringify([])); // إنشاء ملف فارغ إذا لم يكن موجودًا
+}
 
-
-
-// 
-///
 // حفظ المهام
 app.put('/tasks', (req, res) => {
   fs.writeFile(FILE_PATH, JSON.stringify(req.body, null, 2), (err) => {
