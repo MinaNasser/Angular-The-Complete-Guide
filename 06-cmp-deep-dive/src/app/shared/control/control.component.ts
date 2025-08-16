@@ -26,7 +26,7 @@ export class ControlComponent {
   }
 
   label = input.required<string>();
-  onClick(): void {
-    console.log('click');
-  }
+  // onClick(): void {
+  //   console.log('click');
+  // }
 }
