@@ -21,13 +21,12 @@ import {
   },
 })
 export class ControlComponent {
-  // @HostBinding('class') className = 'control';
   @HostListener('click') onClick(): void {
     console.log('Control clicked');
   }
 
   label = input.required<string>();
-  // onClick(): void {
-  //   console.log('click');
-  // }
+  onClick(): void {
+    console.log('click');
+  }
 }
