@@ -32,6 +32,8 @@ export class ServerStatusComponent implements OnInit {
         'offline',
         'unknown',
       ];
+      // Randomly select a status from the array
+      //  console.log(`Server status changed to: ${this.currentStatus}`);
       this.currentStatus =
         statuses[Math.floor(Math.random() * statuses.length)];
       // console.log(`Server status changed to: ${this.currentStatus}`);
