@@ -13,6 +13,12 @@ import {
   templateUrl: './control.component.html',
   styleUrl: './control.component.css',
   encapsulation: ViewEncapsulation.None,
+
+  // host: {
+  //   class: 'control',
+  //   '[class.control--required]': 'label.required',
+  //   '[class.control--invalid]': 'label.invalid',
+  // },
   host: {
     class: 'control',
     '[class.control--required]': 'label.required',
