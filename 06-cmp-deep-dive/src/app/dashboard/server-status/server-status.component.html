@@ -26,3 +26,25 @@
   <p>Fetching server status failed.</p>
   }
 </div>
+
+<!--
+Life cycle of Component
+- ngOnChanges: Called when an input property changes.
+- ngOnInit: Called when the component is initialized.
+- ngDoCheck: Called during every change detection run.
+- ngAfterContentInit: Called after the content of the component has been initialized.
+- ngAfterContentChecked: Called after the content of the component has been checked.
+- ngAfterViewInit: Called after the view of the component has been initialized.
+- ngAfterViewChecked: Called after the view of the component has been checked.
+- ngOnDestroy: Called when the component is about to be destroyed.
+- ngOnChanges is called before ngOnInit.
+- ngOnInit is called once after the first ngOnChanges.
+- ngDoCheck is called after ngOnChanges and ngOnInit.
+- ngAfterContentInit is called after ngDoCheck.
+- ngAfterContentChecked is called after ngAfterContentInit.
+- ngAfterViewInit is called after ngAfterContentChecked.
+- ngAfterViewChecked is called after ngAfterViewInit.
+- ngOnDestroy is called after ngAfterViewChecked.
+- ngOnDestroy is called when the component is about to be destroyed.
+
+-->
