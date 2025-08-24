@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-server-status',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './server-status.component.html',
   styleUrl: './server-status.component.css',
 })
-export class ServerStatusComponent implements OnInit {
+export class ServerStatusComponent implements OnInit, AfterViewInit {
   currentStatus: 'online' | 'offline' | 'unknown' = 'unknown';
 
   constructor() {}
@@ -25,6 +25,11 @@ export class ServerStatusComponent implements OnInit {
     //   this.currentStatus =
     //     statuses[Math.floor(Math.random() * statuses.length)];
     // }, 2000);
+    console.log(
+      'ServerStatusComponent initialized with status:',
+      this.currentStatus
+    );
+
     setInterval(() => {
       // Simulate changing server status every 2 seconds  (online/offline/unknown)
       const statuses: ('online' | 'offline' | 'unknown')[] = [
@@ -38,5 +43,10 @@ export class ServerStatusComponent implements OnInit {
         statuses[Math.floor(Math.random() * statuses.length)];
       // console.log(`Server status changed to: ${this.currentStatus}`);
     }, 5000);
+  }
+  ngAfterViewInit(): void {
+    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    //Add 'implements AfterViewInit' to the class.
+    console.log('ServerStatusComponent view initialized.');
   }
 }
