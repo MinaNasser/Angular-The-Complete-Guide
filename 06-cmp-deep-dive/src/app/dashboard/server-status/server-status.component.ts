@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  DestroyRef,
+  inject,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-server-status',
@@ -9,7 +16,9 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class ServerStatusComponent implements OnInit, AfterViewInit {
   currentStatus: 'online' | 'offline' | 'unknown' = 'unknown';
-  private interval?: ReturnType<typeof setInterval>;
+  // private interval?: ReturnType<typeof setInterval>;
+
+  private destroyRef = inject(DestroyRef);
 
   constructor() {}
 
@@ -19,7 +28,7 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
       this.currentStatus
     );
 
-    this.interval = setInterval(() => {
+    const interval = setInterval(() => {
       // Simulate changing server status every 2 seconds  (online/offline/unknown)
       const statuses: ('online' | 'offline' | 'unknown')[] = [
         'online',
@@ -31,7 +40,8 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
       this.currentStatus =
         statuses[Math.floor(Math.random() * statuses.length)];
       // console.log(`Server status changed to: ${this.currentStatus}`);
-    }, 5000) as any;
+    }, 5000);
+    this.destroyRef.onDestroy(() => clearInterval(interval));
   }
   ngAfterViewInit(): void {
     //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
@@ -39,6 +49,7 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
     console.log('ServerStatusComponent view initialized.');
   }
 }
+
 //   ngOnDestroy(): void {
 //     //Called once, before the instance is destroyed.
 //     //Add 'implements OnDestroy' to the class.
