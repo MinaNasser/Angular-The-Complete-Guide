@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-server-status',
@@ -9,28 +9,17 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class ServerStatusComponent implements OnInit, AfterViewInit {
   currentStatus: 'online' | 'offline' | 'unknown' = 'unknown';
+  private interval?: ReturnType<typeof setInterval>;
 
   constructor() {}
 
   ngOnInit(): void {
-    // const statuses: Array<'online' | 'offline' | 'unknown'> = [
-    //   'online',
-    //   'offline',
-    //   'unknown',
-    // ];
-    // this.currentStatus = statuses[Math.floor(Math.random() * statuses.length)];
-    // // Simulate a server status check
-    // setTimeout(() => {
-    //   // Randomly change the status after 2 seconds
-    //   this.currentStatus =
-    //     statuses[Math.floor(Math.random() * statuses.length)];
-    // }, 2000);
     console.log(
       'ServerStatusComponent initialized with status:',
       this.currentStatus
     );
 
-    setInterval(() => {
+    this.interval = setInterval(() => {
       // Simulate changing server status every 2 seconds  (online/offline/unknown)
       const statuses: ('online' | 'offline' | 'unknown')[] = [
         'online',
@@ -42,7 +31,7 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
       this.currentStatus =
         statuses[Math.floor(Math.random() * statuses.length)];
       // console.log(`Server status changed to: ${this.currentStatus}`);
-    }, 5000);
+    }, 5000) as any;
   }
   ngAfterViewInit(): void {
     //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
@@ -50,3 +39,28 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
     console.log('ServerStatusComponent view initialized.');
   }
 }
+//   ngOnDestroy(): void {
+//     //Called once, before the instance is destroyed.
+//     //Add 'implements OnDestroy' to the class.
+//     console.log('ServerStatusComponent destroyed.');
+
+//     if (this.interval) {
+//       clearInterval(this.interval);
+//       clearTimeout(this.interval);
+//       console.log('Interval cleared.');
+//     }
+//   }
+// }
+
+// const statuses: Array<'online' | 'offline' | 'unknown'> = [
+//   'online',
+//   'offline',
+//   'unknown',
+// ];
+// this.currentStatus = statuses[Math.floor(Math.random() * statuses.length)];
+// // Simulate a server status check
+// setTimeout(() => {
+//   // Randomly change the status after 2 seconds
+//   this.currentStatus =
+//     statuses[Math.floor(Math.random() * statuses.length)];
+// }, 2000);
