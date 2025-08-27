@@ -39,6 +39,7 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
       //  console.log(`Server status changed to: ${this.currentStatus}`);
       this.currentStatus =
         statuses[Math.floor(Math.random() * statuses.length)];
+
       // console.log(`Server status changed to: ${this.currentStatus}`);
     }, 5000);
     this.destroyRef.onDestroy(() => clearInterval(interval));
