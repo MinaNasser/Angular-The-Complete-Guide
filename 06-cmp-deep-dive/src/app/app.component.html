@@ -1,21 +1,28 @@
 <app-header></app-header>
 
 <main>
-
   <div id="dashboard">
-
-    <app-dashboard-item [title]="'Server Status'" [image]="{url: 'status.png', alt: 'Server Status'}">
+    <app-dashboard-item
+      [title]="'Server Status'"
+      [image]="{ url: 'status.png', alt: 'Server Status' }"
+    >
       <app-server-status></app-server-status>
     </app-dashboard-item>
 
-    <app-dashboard-item [title]="'Traffic'" [image]="{url: 'globe.png', alt: 'A globe with Traffic'}">
+    <app-dashboard-item
+      [title]="'Traffic'"
+      [image]="{ url: 'globe.png', alt: 'A globe with Traffic' }"
+    >
+      <!-- <app-traffic></app-traffic> -->
       <app-traffic></app-traffic>
     </app-dashboard-item>
-
-    <app-dashboard-item [title]="'Tickets'" [image]="{url: 'list.png', alt: 'Tickets list'}">
+    <!-- <app-dashboard-item [title]="'Tickets'" [image]="{url: 'list.png', alt: 'Tickets list'}"><app-tickets></app-tickets></app-dashboard-item> -->
+    <app-dashboard-item
+      [title]="'Tickets'"
+      [image]="{ url: 'list.png', alt: 'Tickets list' }"
+    >
+      <!-- <app-tickets></app-tickets> -->
       <app-tickets></app-tickets>
     </app-dashboard-item>
-
   </div>
-
 </main>
