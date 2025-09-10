@@ -10,11 +10,14 @@ import { ControlComponent } from '../../../shared/control/control.component';
   styleUrl: './new-ticket.component.css',
 })
 export class NewTicketComponent {
-  onSubmit(titleInput: HTMLInputElement): void {
+  /*  onSubmit(titleInput: HTMLInputElement): void {
     console.log('Form submitted', titleInput.value);
     // Clear the input field
     titleInput.value = '';
     // Focus the title input
     titleInput.focus();
+  } */
+  onSubmit(title: string, ticketText: string): void {
+    console.log('Form submitted', title, ticketText);
   }
 }
