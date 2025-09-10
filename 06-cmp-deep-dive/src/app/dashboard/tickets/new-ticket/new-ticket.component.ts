@@ -17,7 +17,7 @@ export class NewTicketComponent {
     // Focus the title input
     titleInput.focus();
   } */
-  onSubmit(title: string, ticketText: string): void {
-    console.log('Form submitted', title, ticketText);
+  onSubmit(title: string, ticketText: string, form: HTMLFormElement): void {
+    console.log('Form submitted', title, ticketText, form);
   }
 }
