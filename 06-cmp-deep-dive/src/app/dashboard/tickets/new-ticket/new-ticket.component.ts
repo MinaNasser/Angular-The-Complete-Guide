@@ -13,9 +13,7 @@ export class NewTicketComponent {
   onSubmit(titleInput: HTMLInputElement): void {
     console.log('Form submitted', titleInput.value);
     // Clear the input field
-
     titleInput.value = '';
-
     // Focus the title input
     titleInput.focus();
   }
