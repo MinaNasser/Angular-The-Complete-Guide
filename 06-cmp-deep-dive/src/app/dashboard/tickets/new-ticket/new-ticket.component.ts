@@ -12,5 +12,7 @@ import { ControlComponent } from '../../../shared/control/control.component';
 export class NewTicketComponent {
   onSubmit(titleInput: HTMLInputElement): void {
     console.log('Form submitted', titleInput.value);
+    titleInput.value = '';
+    titleInput.focus();
   }
 }
