@@ -1,5 +1,5 @@
 import { FormsModule } from '@angular/forms';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, viewChild, ViewChild } from '@angular/core';
 import { MyButtonComponent } from '../../../shared/my-button/my-button.component';
 import { ControlComponent } from '../../../shared/control/control.component';
 @Component({
@@ -20,9 +20,13 @@ export class NewTicketComponent {
 
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
 
+  private forme = viewChild.required<ElementRef<HTMLFormElement>>('form');
+
   onSubmit(title: string, ticketText: string): void {
     console.log('Form submitted', title, ticketText);
     // Clear the input fields
     this.form?.nativeElement.reset();
+
+    this.forme().nativeElement.reset();
   }
 }
