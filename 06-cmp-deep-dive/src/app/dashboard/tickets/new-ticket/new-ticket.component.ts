@@ -18,11 +18,11 @@ export class NewTicketComponent {
     titleInput.focus();
   } */
 
-  @ViewChild('form') form!: ElementRef<HTMLFormElement>;
+  @ViewChild('form') form?: ElementRef<HTMLFormElement>;
 
   onSubmit(title: string, ticketText: string): void {
     console.log('Form submitted', title, ticketText);
     // Clear the input fields
-    this.form.nativeElement.reset();
+    this.form?.nativeElement.reset();
   }
 }
