@@ -1,5 +1,5 @@
 import { FormsModule } from '@angular/forms';
-import { Component } from '@angular/core';
+import { Component, ViewChild, viewChild } from '@angular/core';
 import { MyButtonComponent } from '../../../shared/my-button/my-button.component';
 import { ControlComponent } from '../../../shared/control/control.component';
 @Component({
@@ -17,7 +17,12 @@ export class NewTicketComponent {
     // Focus the title input
     titleInput.focus();
   } */
-  onSubmit(title: string, ticketText: string, form: HTMLFormElement): void {
-    console.log('Form submitted', title, ticketText, form);
+
+  @ViewChild('form') form!: HTMLFormElement;
+
+  onSubmit(title: string, ticketText: string): void {
+    console.log('Form submitted', title, ticketText);
+    // Clear the input fields
+    this.form.reset();
   }
 }
