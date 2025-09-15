@@ -23,6 +23,7 @@ export class NewTicketComponent {
   private forme = viewChild.required<ElementRef<HTMLFormElement>>('form');
 
   onSubmit(title: string, ticketText: string): void {
+    // const title = titleInput.value;
     console.log('Form submitted', title, ticketText);
     // Clear the input fields
     this.form?.nativeElement.reset();
