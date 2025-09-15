@@ -18,6 +18,7 @@ export class NewTicketComponent {
     titleInput.focus();
   } */
 
+  // Get a reference to the form element
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
 
   private forme = viewChild.required<ElementRef<HTMLFormElement>>('form');
@@ -25,6 +26,7 @@ export class NewTicketComponent {
   onSubmit(title: string, ticketText: string): void {
     // const title = titleInput.value;
     console.log('Form submitted', title, ticketText);
+
     // Clear the input fields
     this.form?.nativeElement.reset();
 
