@@ -8,6 +8,12 @@
   <div [style.height]="(dataPoint.value / maxTraffic) * 100 + '%'">
     {{ dataPoint.value }}
   </div>
+
   }
 </div>
 <p>Max traffic: {{ maxTraffic }} MB</p>
+<!--
+  This is a simple bar chart representation of traffic data.
+  Each bar's height is proportional to its value relative to the maximum value in the dataset.
+-->
+<p>Last 7 days</p>
