@@ -5,11 +5,13 @@
     fontSize: currentStatus === 'online' ? '2rem' : '1rem',
   }" -->
 <!-- <div class="server-status">{{ currentStatus }}</div> -->
-
+<!-- <div class="server-status" [class.online]="currentStatus === 'online'"></div> -->
 <div
   [class]="{
     status: true,
+
     'status-online': currentStatus === 'online',
+
     'status-offline': currentStatus === 'offline',
     'status-unknown': currentStatus === 'unknown'
   }"
