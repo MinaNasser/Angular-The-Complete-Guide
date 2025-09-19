@@ -25,7 +25,6 @@ header {
 }
 /* #logo img */
 
-
 nav ul {
   display: flex;
   gap: 2rem;
@@ -41,6 +40,12 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
+
+/*
+    nav ul li a:active {
+  color: #77207a;
+}
+*/
 
 nav ul li a:hover {
   color: #77207a;
