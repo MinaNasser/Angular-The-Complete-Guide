@@ -23,6 +23,7 @@ header {
   height: 100%;
   filter: drop-shadow(0 0 4px rgba(29, 29, 29, 0.35));
 }
+/* #logo img */
 
 nav ul {
   display: flex;
