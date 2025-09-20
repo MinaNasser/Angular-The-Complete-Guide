@@ -1,4 +1,9 @@
 <form (ngSubmit)="onSubmit(titleInput.value, requestInput.value)" #form>
+  <!--
+    Using ngProjectAs to force the icon to be projected into the button component
+    even though it is not a direct child of the button element.
+
+  -->
   <app-control label="Title">
     <label for="title">Title</label>
     <input
