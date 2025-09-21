@@ -34,7 +34,7 @@ export class ControlComponent {
   @HostListener('click') onClick(): void {
     console.log('Control clicked');
     console.log(this.el);
-    console.log(this.inputRef);
+    console.log(this.control());
   }
 
   label = input.required<string>();
@@ -49,7 +49,7 @@ export class ControlComponent {
   //   HTMLInputElement | HTMLTextAreaElement
   // >;
 
-  private inputRef =
+  private control =
     contentChild<ElementRef<HTMLElement | HTMLTextAreaElement>>('input');
 
   // @HostBinding('class.control--required')
