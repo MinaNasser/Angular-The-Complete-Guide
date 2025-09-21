@@ -1,7 +1,9 @@
 import {
   Component,
+  ElementRef,
   HostBinding,
   HostListener,
+  inject,
   input,
   ViewEncapsulation,
 } from '@angular/core';
@@ -23,7 +25,7 @@ import {
     class: 'control',
     '[class.control--required]': 'label.required',
     '[class.control--invalid]': 'label.invalid',
-    // '(click)': 'onClick()',
+    '(click)': 'onClick()',
   },
 })
 export class ControlComponent {
@@ -32,6 +34,8 @@ export class ControlComponent {
   }
 
   label = input.required<string>();
+  private el = inject(ElementRef<HTMLElement>);
+
   // onClick(): void {
   //   console.log('click');
   // }
