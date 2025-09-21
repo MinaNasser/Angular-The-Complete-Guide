@@ -35,7 +35,13 @@ export class ControlComponent {
   }
 
   label = input.required<string>();
+
   private el = inject(ElementRef<HTMLElement>);
+  // private el = inject(ElementRef<HTMLElement>).nativeElement;
+
+  // get label(): HTMLLabelElement | null {
+  //   return this.el.nativeElement.querySelector('label');
+  // }
   @ContentChild('input') private inputRef?: ElementRef<HTMLInputElement>;
 
   @ContentChild('label') private labelRef?: ElementRef<HTMLLabelElement>;
