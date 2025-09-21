@@ -1,5 +1,6 @@
 import {
   Component,
+  ContentChild,
   ElementRef,
   HostBinding,
   HostListener,
@@ -35,6 +36,17 @@ export class ControlComponent {
 
   label = input.required<string>();
   private el = inject(ElementRef<HTMLElement>);
+  @ContentChild('input') private inputRef?: ElementRef<HTMLInputElement>;
+  @ContentChild('label') private labelRef?: ElementRef<HTMLLabelElement>;
+
+  @HostBinding('class.control--required')
+  get isRequired(): boolean {
+    return !!this.labelRef?.nativeElement.classList.contains('required');
+  }
+  @HostBinding('class.control--invalid')
+  get isInvalid(): boolean {
+    return !!this.labelRef?.nativeElement.classList.contains('invalid');
+  }
 
   // onClick(): void {
   //   console.log('click');
