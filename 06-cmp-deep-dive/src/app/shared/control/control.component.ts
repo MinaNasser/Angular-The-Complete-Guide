@@ -43,9 +43,9 @@ export class ControlComponent {
   // get label(): HTMLLabelElement | null {
   //   return this.el.nativeElement.querySelector('label');
   // }
-  @ContentChild('input') private inputRef?: ElementRef<HTMLInputElement>;
-
-  @ContentChild('label') private labelRef?: ElementRef<HTMLLabelElement>;
+  @ContentChild('input') private inputRef?: ElementRef<
+    HTMLInputElement | HTMLTextAreaElement
+  >;
 
   // @HostBinding('class.control--required')
   // get isRequired(): boolean {
