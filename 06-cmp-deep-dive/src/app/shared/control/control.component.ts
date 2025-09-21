@@ -37,6 +37,7 @@ export class ControlComponent {
   label = input.required<string>();
   private el = inject(ElementRef<HTMLElement>);
   @ContentChild('input') private inputRef?: ElementRef<HTMLInputElement>;
+
   @ContentChild('label') private labelRef?: ElementRef<HTMLLabelElement>;
 
   // @HostBinding('class.control--required')
