@@ -1,5 +1,6 @@
 import {
   Component,
+  contentChild,
   ContentChild,
   ElementRef,
   HostBinding,
@@ -33,6 +34,7 @@ export class ControlComponent {
   @HostListener('click') onClick(): void {
     console.log('Control clicked');
     console.log(this.el);
+    console.log(this.inputRef);
   }
 
   label = input.required<string>();
@@ -43,9 +45,12 @@ export class ControlComponent {
   // get label(): HTMLLabelElement | null {
   //   return this.el.nativeElement.querySelector('label');
   // }
-  @ContentChild('input') private inputRef?: ElementRef<
-    HTMLInputElement | HTMLTextAreaElement
-  >;
+  // @ContentChild('input') private inputRef?: ElementRef<
+  //   HTMLInputElement | HTMLTextAreaElement
+  // >;
+
+  private inputRef =
+    contentChild<ElementRef<HTMLElement | HTMLTextAreaElement>>('input');
 
   // @HostBinding('class.control--required')
   // get isRequired(): boolean {
