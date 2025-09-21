@@ -39,14 +39,14 @@ export class ControlComponent {
   @ContentChild('input') private inputRef?: ElementRef<HTMLInputElement>;
   @ContentChild('label') private labelRef?: ElementRef<HTMLLabelElement>;
 
-  @HostBinding('class.control--required')
-  get isRequired(): boolean {
-    return !!this.labelRef?.nativeElement.classList.contains('required');
-  }
-  @HostBinding('class.control--invalid')
-  get isInvalid(): boolean {
-    return !!this.labelRef?.nativeElement.classList.contains('invalid');
-  }
+  // @HostBinding('class.control--required')
+  // get isRequired(): boolean {
+  //   return !!this.labelRef?.nativeElement.classList.contains('required');
+  // }
+  // @HostBinding('class.control--invalid')
+  // get isInvalid(): boolean {
+  //   return !!this.labelRef?.nativeElement.classList.contains('invalid');
+  // }
 
   // onClick(): void {
   //   console.log('click');
