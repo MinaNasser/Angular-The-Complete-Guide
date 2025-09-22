@@ -3,11 +3,11 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
-  OnDestroy,
   OnInit,
-  viewChild,
   ViewChild,
+  viewChild,
 } from '@angular/core';
+
 import { MyButtonComponent } from '../../../shared/my-button/my-button.component';
 import { ControlComponent } from '../../../shared/control/control.component';
 @Component({
