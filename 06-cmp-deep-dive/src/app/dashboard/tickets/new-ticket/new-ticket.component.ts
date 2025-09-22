@@ -3,6 +3,7 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
+  OnDestroy,
   OnInit,
   viewChild,
   ViewChild,
@@ -52,4 +53,7 @@ export class NewTicketComponent implements OnInit, AfterViewInit {
 
     this.forme().nativeElement.reset();
   }
+  // ngOnDestroy(): void {
+  //   console.log('on destroy');
+  // }
 }
