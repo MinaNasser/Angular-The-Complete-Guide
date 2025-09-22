@@ -5,6 +5,7 @@ import {
   inject,
   OnDestroy,
   OnInit,
+  signal,
 } from '@angular/core';
 
 @Component({
@@ -15,7 +16,7 @@ import {
   styleUrl: './server-status.component.css',
 })
 export class ServerStatusComponent implements OnInit, AfterViewInit {
-  currentStatus: 'online' | 'offline' | 'unknown' = 'unknown';
+  currentStatus = signal<'online' | 'offline' | 'unknown'>('online');
   // private interval?: ReturnType<typeof setInterval>;
 
   private destroyRef = inject(DestroyRef);
@@ -37,8 +38,9 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
       ];
       // Randomly select a status from the array
       //  console.log(`Server status changed to: ${this.currentStatus}`);
-      this.currentStatus =
-        statuses[Math.floor(Math.random() * statuses.length)];
+      this.currentStatus.set(
+        statuses[Math.floor(Math.random() * statuses.length)]
+      );
 
       // console.log(`Server status changed to: ${this.currentStatus}`);
     }, 5000);
