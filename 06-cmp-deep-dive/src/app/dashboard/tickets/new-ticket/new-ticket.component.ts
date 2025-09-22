@@ -33,15 +33,8 @@ export class NewTicketComponent implements OnInit, AfterViewInit {
   }
 
   onSubmit(title: string, ticketText: string): void {
-    // const title = titleInput.value;
     console.log('Form submitted', title, ticketText);
-
-    // Clear the input fields
     this.form?.nativeElement.reset();
-
     this.forme().nativeElement.reset();
   }
-  // ngOnDestroy(): void {
-  //   console.log('on destroy');
-  // }
 }
