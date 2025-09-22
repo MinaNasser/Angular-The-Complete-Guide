@@ -28,7 +28,6 @@ export class NewTicketComponent implements OnInit, AfterViewInit {
     console.log('form in OnInit', this.form?.nativeElement);
   }
   ngAfterViewInit() {
-    // this.form?.nativeElement.querySelector('input')?.focus();
     console.log('after view init');
     console.log('form in AfterViewInit', this.forme().nativeElement);
   }
