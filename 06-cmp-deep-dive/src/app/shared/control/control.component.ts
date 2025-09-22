@@ -31,7 +31,7 @@ import {
     '(click)': 'onClick()',
   },
 })
-export class ControlComponent implements AfterContentInit {
+export class ControlComponent {
   @HostListener('click') onClick(): void {
     console.log('Control clicked');
     // console.log(this.el);
