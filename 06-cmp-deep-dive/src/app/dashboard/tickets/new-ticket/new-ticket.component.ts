@@ -18,14 +18,6 @@ import { ControlComponent } from '../../../shared/control/control.component';
   styleUrl: './new-ticket.component.css',
 })
 export class NewTicketComponent implements OnInit, AfterViewInit {
-  /*  onSubmit(titleInput: HTMLInputElement): void {
-    console.log('Form submitted', titleInput.value);
-    // Clear the input field
-    titleInput.value = '';
-    // Focus the title input
-    titleInput.focus();
-  } */
-
   // Get a reference to the form element
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
 
