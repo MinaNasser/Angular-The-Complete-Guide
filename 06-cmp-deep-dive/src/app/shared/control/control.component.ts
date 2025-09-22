@@ -1,10 +1,8 @@
 import {
-  AfterContentInit,
   afterNextRender,
   afterRender,
   Component,
   contentChild,
-  ContentChild,
   ElementRef,
   HostBinding,
   HostListener,
