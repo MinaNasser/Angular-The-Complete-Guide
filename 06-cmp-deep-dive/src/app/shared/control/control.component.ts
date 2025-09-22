@@ -1,4 +1,5 @@
 import {
+  AfterContentInit,
   Component,
   contentChild,
   ContentChild,
@@ -30,7 +31,7 @@ import {
     '(click)': 'onClick()',
   },
 })
-export class ControlComponent {
+export class ControlComponent implements AfterContentInit {
   @HostListener('click') onClick(): void {
     console.log('Control clicked');
     // console.log(this.el);
@@ -51,7 +52,12 @@ export class ControlComponent {
 
   private control =
     contentChild<ElementRef<HTMLElement | HTMLTextAreaElement>>('input');
+  private labelRef = contentChild<ElementRef<HTMLLabelElement>>('label');
 
+  // ngAfterContentInit(): void {
+  //   console.log('After content init');
+  //   console.log('labelRef', this.labelRef);
+  // }
   // @HostBinding('class.control--required')
   // get isRequired(): boolean {
   //   return !!this.labelRef?.nativeElement.classList.contains('required');
