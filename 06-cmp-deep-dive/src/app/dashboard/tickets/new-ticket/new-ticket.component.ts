@@ -21,15 +21,15 @@ export class NewTicketComponent implements OnInit, AfterViewInit {
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
   private forme = viewChild.required<ElementRef<HTMLFormElement>>('form');
   constructor() {
-    console.log('constructor');
+    // console.log('constructor');
   }
   ngOnInit(): void {
-    console.log('on init');
-    console.log('form in OnInit', this.form?.nativeElement);
+    // console.log('on init');
+    // console.log('form in OnInit', this.form?.nativeElement);
   }
   ngAfterViewInit() {
-    console.log('after view init');
-    console.log('form in AfterViewInit', this.forme().nativeElement);
+    // console.log('after view init');
+    // console.log('form in AfterViewInit', this.forme().nativeElement);
   }
 
   onSubmit(title: string, ticketText: string): void {
