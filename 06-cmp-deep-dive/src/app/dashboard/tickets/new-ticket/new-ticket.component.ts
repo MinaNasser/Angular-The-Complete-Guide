@@ -18,11 +18,8 @@ import { ControlComponent } from '../../../shared/control/control.component';
   styleUrl: './new-ticket.component.css',
 })
 export class NewTicketComponent implements OnInit, AfterViewInit {
-  // Get a reference to the form element
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
-
   private forme = viewChild.required<ElementRef<HTMLFormElement>>('form');
-
   constructor() {
     console.log('constructor');
   }
