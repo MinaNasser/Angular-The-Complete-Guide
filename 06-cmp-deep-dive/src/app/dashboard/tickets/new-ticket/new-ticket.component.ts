@@ -1,5 +1,12 @@
 import { FormsModule } from '@angular/forms';
-import { Component, ElementRef, viewChild, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  viewChild,
+  ViewChild,
+} from '@angular/core';
 import { MyButtonComponent } from '../../../shared/my-button/my-button.component';
 import { ControlComponent } from '../../../shared/control/control.component';
 @Component({
@@ -9,7 +16,7 @@ import { ControlComponent } from '../../../shared/control/control.component';
   templateUrl: './new-ticket.component.html',
   styleUrl: './new-ticket.component.css',
 })
-export class NewTicketComponent {
+export class NewTicketComponent implements OnInit, AfterViewInit {
   /*  onSubmit(titleInput: HTMLInputElement): void {
     console.log('Form submitted', titleInput.value);
     // Clear the input field
@@ -22,6 +29,18 @@ export class NewTicketComponent {
   @ViewChild('form') form?: ElementRef<HTMLFormElement>;
 
   private forme = viewChild.required<ElementRef<HTMLFormElement>>('form');
+
+  constructor() {
+    console.log('constructor');
+  }
+  ngOnInit(): void {
+    console.log('on init');
+  }
+  ngAfterViewInit() {
+    // this.form?.nativeElement.querySelector('input')?.focus();
+    console.log('after view init');
+    console.log(this.forme());
+  }
 
   onSubmit(title: string, ticketText: string): void {
     // const title = titleInput.value;
