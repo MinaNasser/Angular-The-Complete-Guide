@@ -1,5 +1,7 @@
 import {
   AfterContentInit,
+  afterNextRender,
+  afterRender,
   Component,
   contentChild,
   ContentChild,
@@ -38,6 +40,18 @@ export class ControlComponent {
     // console.log(this.control());
   }
 
+  /**
+   *
+   */
+  constructor() {
+    afterRender(() => {
+      console.log('After render');
+    });
+    console.log('Constructor');
+    afterNextRender(() => {
+      console.log('After next render');
+    });
+  }
   label = input.required<string>();
 
   private el = inject(ElementRef<HTMLElement>);
