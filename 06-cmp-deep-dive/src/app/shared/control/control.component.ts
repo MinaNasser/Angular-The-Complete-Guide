@@ -43,16 +43,14 @@ export class ControlComponent {
   constructor() {
     // afterRender is a lifecycle hook that runs after the component's view has been rendered
     // afterNextRender is a lifecycle hook that runs after the component's view has been rendered and the next change detection cycle has completed
-
-    afterRender(() => {
-      console.log('After render');
-    });
-    console.log('Constructor');
-
-    // afterNextRender is a lifecycle hook that runs after the component's view has been rendered and the next change detection cycle has completed
-    afterNextRender(() => {
-      console.log('After next render');
-    });
+    // afterRender(() => {
+    //   console.log('After render');
+    // });
+    // console.log('Constructor');
+    // // afterNextRender is a lifecycle hook that runs after the component's view has been rendered and the next change detection cycle has completed
+    // afterNextRender(() => {
+    //   console.log('After next render');
+    // });
   }
   label = input.required<string>();
 
