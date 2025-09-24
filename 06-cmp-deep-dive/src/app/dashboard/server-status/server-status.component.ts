@@ -41,19 +41,6 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
   }
 }
 
-//   ngOnDestroy(): void {
-//     //Called once, before the instance is destroyed.
-//     //Add 'implements OnDestroy' to the class.
-//     console.log('ServerStatusComponent destroyed.');
-
-//     if (this.interval) {
-//       clearInterval(this.interval);
-//       clearTimeout(this.interval);
-//       console.log('Interval cleared.');
-//     }
-//   }
-// }
-
 // const statuses: Array<'online' | 'offline' | 'unknown'> = [
 //   'online',
 //   'offline',
