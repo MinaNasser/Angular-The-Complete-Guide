@@ -41,6 +41,7 @@ export class TrafficComponent {
       id: 'd48',
       value: 689,
     },
+    { id: 'd49', value: 789 },
   ];
   maxTraffic = Math.max(...this.dummyTrafficData.map((data) => data.value));
 }
