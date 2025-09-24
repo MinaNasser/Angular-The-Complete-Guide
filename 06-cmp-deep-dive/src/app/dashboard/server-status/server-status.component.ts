@@ -17,33 +17,22 @@ import {
 })
 export class ServerStatusComponent implements OnInit, AfterViewInit {
   currentStatus = signal<'online' | 'offline' | 'unknown'>('online');
-
-  // private interval?: ReturnType<typeof setInterval>;
-
   private destroyRef = inject(DestroyRef);
-
   constructor() {}
-
   ngOnInit(): void {
     console.log(
       'ServerStatusComponent initialized with status:',
       this.currentStatus
     );
-
     const interval = setInterval(() => {
-      // Simulate changing server status every 2 seconds  (online/offline/unknown)
       const statuses: ('online' | 'offline' | 'unknown')[] = [
         'online',
         'offline',
         'unknown',
       ];
-      // Randomly select a status from the array
-      //  console.log(`Server status changed to: ${this.currentStatus}`);
       this.currentStatus.set(
         statuses[Math.floor(Math.random() * statuses.length)]
       );
-
-      // console.log(`Server status changed to: ${this.currentStatus}`);
     }, 5000);
     this.destroyRef.onDestroy(() => clearInterval(interval));
   }
