@@ -1,4 +1,4 @@
-[Tree_Of_cmp-deep-dive] (Tree.md)
+[Tree_Of_cmp-deep-dive](Tree.md)
 
 # CmpDeepDive
 
