@@ -40,16 +40,3 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
     console.log('ServerStatusComponent view initialized.');
   }
 }
-
-// const statuses: Array<'online' | 'offline' | 'unknown'> = [
-//   'online',
-//   'offline',
-//   'unknown',
-// ];
-// this.currentStatus = statuses[Math.floor(Math.random() * statuses.length)];
-// // Simulate a server status check
-// setTimeout(() => {
-//   // Randomly change the status after 2 seconds
-//   this.currentStatus =
-//     statuses[Math.floor(Math.random() * statuses.length)];
-// }, 2000);
