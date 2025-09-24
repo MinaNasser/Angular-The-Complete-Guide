@@ -3,7 +3,6 @@
 # File Tree: 06-cmp-deep-dive
 
 Generated on: 9/24/2025, 11:37:31 PM
-Root path: `d:\work\FreeLans work\Udemy Angular\Angular-The-Complete-Guide\06-cmp-deep-dive`
 
 ```
 ├── 📁 .angular/
