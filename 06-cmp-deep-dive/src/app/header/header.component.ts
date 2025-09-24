@@ -9,7 +9,4 @@ import { MyButtonComponent } from '../shared/my-button/my-button.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {
-  // no logic yet
-  //
-}
+export class HeaderComponent {}
