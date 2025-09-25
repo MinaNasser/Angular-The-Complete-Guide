@@ -1,3 +1,4 @@
+import { Ticket } from './ticket.model';
 import { Component } from '@angular/core';
 import { NewTicketComponent } from './new-ticket/new-ticket.component';
 
@@ -10,4 +11,5 @@ import { NewTicketComponent } from './new-ticket/new-ticket.component';
 })
 export class TicketsComponent {
   // TypeScript & Type Models Repetition
+  tickets: Ticket[] = [];
 }
