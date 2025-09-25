@@ -2,6 +2,7 @@ import {
   AfterViewInit,
   Component,
   DestroyRef,
+  effect,
   inject,
   OnDestroy,
   OnInit,
@@ -20,10 +21,9 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
   private destroyRef = inject(DestroyRef);
 
   constructor() {
-    console.log(
-      'ServerStatusComponent constructor called.',
-      this.currentStatus()
-    );
+    effect(() => {
+      console.log(this.currentStatus());
+    });
   }
   ngOnInit(): void {
     console.log(
