@@ -12,4 +12,14 @@ import { NewTicketComponent } from './new-ticket/new-ticket.component';
 export class TicketsComponent {
   // TypeScript & Type Models Repetition
   tickets: Ticket[] = [];
+
+  OnAddTicket(event: { title: string; ticketText: string }) {
+    const newTicket: Ticket = {
+      id: Math.random().toString(),
+      title: event.title,
+      request: event.ticketText,
+      status: 'open',
+    };
+    this.tickets.push(newTicket);
+  }
 }
