@@ -19,7 +19,12 @@ export class ServerStatusComponent implements OnInit, AfterViewInit {
   currentStatus = signal<'online' | 'offline' | 'unknown'>('online');
   private destroyRef = inject(DestroyRef);
 
-  constructor() {}
+  constructor() {
+    console.log(
+      'ServerStatusComponent constructor called.',
+      this.currentStatus()
+    );
+  }
   ngOnInit(): void {
     console.log(
       'ServerStatusComponent initialized with status:',
