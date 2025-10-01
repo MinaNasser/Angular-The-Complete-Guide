@@ -7,6 +7,9 @@
     {
       "name": "Almohands",
       "path": "../../Almohands"
+    },
+    {
+      "path": "../../Tiket"
     }
   ],
   "settings": {}
