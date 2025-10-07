@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 import { Ticket } from '../ticket.model';
 
 @Component({
@@ -11,5 +11,6 @@ import { Ticket } from '../ticket.model';
 export class TicketComponent {
   // ticket?: Ticket;
   // input ticket?: Ticket
-  @Input() ticket?: Ticket;
+  // @Input() ticket?: Ticket;
+  data = input.required<Ticket>();
 }
