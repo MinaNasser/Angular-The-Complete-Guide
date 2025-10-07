@@ -14,14 +14,16 @@ export class TicketComponent {
   // @Input() ticket?: Ticket;
   data = input.required<Ticket>();
 
-  close = output<string>();
+  close = output();
   detailsVisible = signal(false);
+  // isCompleted = signal<boolean>(this.data().status === 'close');
 
   onToggleDetails() {
     this.detailsVisible.update((wasVisible) => !wasVisible);
     // this.detailsVisible.set(!this.detailsVisible());
   }
   onMarkAsCompleted() {
-    this.close.emit(this.data().id);
+    this.close.emit();
+    // this.isCompleted.set(true);
   }
 }
