@@ -4,8 +4,8 @@
     <!-- ticket.component.html -->
     <div
       [class]="{
-        'ticket-open': true,
-        'ticket-closed': false
+        'ticket-open': data().status === 'open',
+        'ticket-closed': data().status === 'closed'
       }"
     ></div>
 
