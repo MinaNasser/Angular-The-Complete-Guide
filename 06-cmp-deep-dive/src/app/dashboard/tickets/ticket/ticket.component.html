@@ -4,8 +4,8 @@
     <!-- ticket.component.html -->
     <div
       [class]="{
-        'ticket-open': true,
-        'ticket-closed': false
+        'ticket-open': data().status === 'open',
+        'ticket-closed': data().status === 'close'
       }"
     ></div>
 
@@ -53,7 +53,7 @@
 
   @if (data().status === 'open') {
   <p>
-    <button>Mark as completed</button>
+    <button (click)="onMarkAsCompleted()">Mark as completed</button>
   </p>
   } }
 </article>
