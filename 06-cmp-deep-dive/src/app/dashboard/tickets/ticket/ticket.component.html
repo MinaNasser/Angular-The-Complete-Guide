@@ -9,12 +9,12 @@
       }"
     ></div>
 
-    <button>
+    <button (click)="onToggleDetails()">
       <!-- ticket.component.html -->
       <span class="text">{{ data().title }}</span>
       <!-- span ticket.component.html -->
       <span>
-        @if (true) {
+        @if (detailsVisible()) {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
