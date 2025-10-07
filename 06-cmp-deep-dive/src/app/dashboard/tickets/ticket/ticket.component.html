@@ -11,7 +11,7 @@
 
     <button>
       <!-- ticket.component.html -->
-      <span class="text">TITLE</span>
+      <span class="text">{{ data().title }}</span>
       <!-- span ticket.component.html -->
       <span>
         @if (true) {
@@ -49,9 +49,11 @@
   </h3>
 
   @if (true) {
-  <p>TEXT</p>
+  <p>{{ data().request }}</p>
 
   @if (true) {
-  <p><button>Mark as completed</button></p>
+  <p>
+    <button>Mark as completed</button>
+  </p>
   } }
 </article>
