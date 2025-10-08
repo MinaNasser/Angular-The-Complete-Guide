@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit(titleInput.value, requestInput.value)" #form>
+<form (ngSubmit)="onSubmit()" #form>
   <!--
     Using ngProjectAs to force the icon to be projected into the button component
     even though it is not a direct child of the button element.
@@ -12,13 +12,14 @@
     -->
     <label for="title">Title</label>
     <!-- Using template reference variable to get the input value on submit -->
+    <!-- #titleInput
+     #input
+      -->
     <input
       type="text"
       class="form-control"
       id="title"
       placeholder="Title"
-      #titleInput
-      #input
       [(ngModel)]="enteredTitle"
       name="title"
     />
@@ -40,8 +41,6 @@
       class="form-control"
       id="request"
       rows="3"
-      #requestInput
-      #input
       [(ngModel)]="enteredText"
       name="request"
       placeholder="Describe your issue"
