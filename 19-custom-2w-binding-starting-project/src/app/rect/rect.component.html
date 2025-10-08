@@ -1,6 +1,8 @@
 <div
   id="rect"
-  [style.width]="'200px'"
-  [style.height]="'100px'"
+  [style.width]="'' + width + 'px'"
+  [style.height]="'' + height + 'px'"
+  [style.backgroundColor]="backgroundColor"
+  [style.borderRadius]="'' + borderRadius + 'px'"
   (click)="onReset()"
 ></div>
