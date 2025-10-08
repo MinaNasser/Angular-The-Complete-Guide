@@ -25,6 +25,8 @@ export class NewTicketComponent implements OnInit, AfterViewInit {
   // @ViewChild('form') form?: ElementRef<HTMLFormElement>;
   private forme = viewChild.required<ElementRef<HTMLFormElement>>('form');
 
+  enteredTitle = '';
+  enteredText = '';
   add = output<{ title: string; ticketText: string }>();
 
   constructor() {

@@ -19,6 +19,8 @@
       placeholder="Title"
       #titleInput
       #input
+      [(ngModel)]="enteredTitle"
+      name="title"
     />
   </app-control>
   <!--
@@ -40,6 +42,9 @@
       rows="3"
       #requestInput
       #input
+      [(ngModel)]="enteredText"
+      name="request"
+      placeholder="Describe your issue"
     ></textarea>
   </app-control>
 
