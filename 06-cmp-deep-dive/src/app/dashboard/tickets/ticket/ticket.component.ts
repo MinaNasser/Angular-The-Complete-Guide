@@ -12,6 +12,7 @@ export class TicketComponent {
   // ticket?: Ticket;
   // input ticket?: Ticket
   // @Input() ticket?: Ticket;
+  // {transform: (t) => ({...t})}
   data = input.required<Ticket>();
 
   close = output();
