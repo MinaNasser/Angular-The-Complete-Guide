@@ -15,6 +15,8 @@ export class AuthComponent {
   password = signal('');
   private authService = inject(AuthService);
 
+  constructor() {}
+
   onSubmit() {
     this.authService.authenticate(this.email(), this.password());
   }
