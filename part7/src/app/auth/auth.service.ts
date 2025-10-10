@@ -22,4 +22,7 @@ export class AuthService {
   logout() {
     this.activePermission.set('guest');
   }
+  get user() {
+    return this.activePermission();
+  }
 }
