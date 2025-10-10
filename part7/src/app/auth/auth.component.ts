@@ -20,4 +20,8 @@ export class AuthComponent {
   onSubmit() {
     this.authService.authenticate(this.email(), this.password());
   }
+  onReset() {
+    this.email.set('');
+    this.password.set('');
+  }
 }
