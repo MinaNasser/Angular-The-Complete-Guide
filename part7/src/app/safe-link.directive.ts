@@ -4,4 +4,8 @@ import { Directive } from '@angular/core';
   selector: 'a[appSafeLink]',
   standalone: true,
 })
-export class SafeLinkDirective {}
+export class SafeLinkDirective {
+  constructor() {
+    console.log('SafeLink Directive loaded');
+  }
+}
