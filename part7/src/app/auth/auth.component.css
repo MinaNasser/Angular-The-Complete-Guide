@@ -17,6 +17,7 @@ label {
   margin-bottom: 0.15rem;
   font-weight: bold;
   font-size: 0.8rem;
+  text-align: left;
   color: #1e2330;
 }
 
@@ -27,6 +28,7 @@ input {
   border: 1px solid #606980;
   width: 100%;
   background-color: #606980;
+  text-align: left;
   color: white;
 }
 
