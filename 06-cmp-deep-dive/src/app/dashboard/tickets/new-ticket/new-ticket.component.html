@@ -24,19 +24,8 @@
       name="title"
     />
   </app-control>
-  <!--
-    Using ngProjectAs to force the icon to be projected into the button component
-    even though it is not a direct child of the button element.
-  -->
   <app-control label="Request">
-    <!-- Using template reference variable to get the input value on submit -->
     <label for="request">Request</label>
-
-    <!--
-        Using template reference variable to get the input value on submit
-      instead of using ngModel for two-way binding.
-
-    -->
     <textarea
       class="form-control"
       id="request"
