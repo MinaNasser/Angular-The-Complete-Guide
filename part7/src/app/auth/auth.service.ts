@@ -22,4 +22,10 @@ export class AuthService {
   logout() {
     this.activePermission.set('guest');
   }
+  autoLogin() {
+    this.activePermission.set('admin');
+    setTimeout(() => {
+      this.activePermission.set('guest');
+    }, 5000);
+  }
 }
