@@ -3,6 +3,10 @@
   <hr />
 
   <app-auth />
-  <p *ngIf="isAdmin">Admin panel</p>
-  <p *ngIf="isAuthenticated">Welcome back!</p>
+  @if (isAuthenticated() && isAdmin()) {
+  <p>Admin panel</p>
+  <p>Welcome back!</p>
+  } @else {
+  <p>You are not logged in.</p>
+  }
 </main>
