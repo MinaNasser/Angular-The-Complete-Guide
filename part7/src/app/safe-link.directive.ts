@@ -13,7 +13,10 @@ export class SafeLinkDirective {
   }
   onConfirmLeavePage(event: MouseEvent) {
     const wantsToLeave = confirm('Are you sure you want to leave this page?');
+
     if (wantsToLeave) {
+      const link = (event.target as HTMLAnchorElement).href;
+      window.location.href = link;
       return;
     } else {
       event.preventDefault();
