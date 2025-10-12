@@ -27,5 +27,10 @@ export class AuthService {
     setTimeout(() => {
       this.activePermission.set('guest');
     }, 5000);
+    console.log(`
+      Auto-login successful.
+      Permission set to admin for 5 seconds.
+      Permission then set to guest.
+    `);
   }
 }
