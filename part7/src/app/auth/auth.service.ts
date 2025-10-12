@@ -33,4 +33,7 @@ export class AuthService {
       Permission then set to guest.
     `);
   }
+  getPermission() {
+    return this.activePermission();
+  }
 }
