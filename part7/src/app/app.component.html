@@ -4,9 +4,9 @@
 
   <app-auth />
 
-  <!-- <p appAuth="admin">Admin Panel</p>
-  <p appAuth="User">User Panel</p>
-  <p appAuth="Guest">Guest Panel</p> -->
+  <ng-template appAuth="admin">
+    <p>Admin Panel</p>
+  </ng-template>
 
   <!-- @if (isAuthenticated() && isAdmin()) {
   <p>Admin panel</p>
