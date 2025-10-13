@@ -7,7 +7,7 @@ import { AuthService } from './auth.service';
   standalone: true,
 })
 export class AuthDirective {
-  userType = input.required<Permission>();
+  userType = input.required<Permission>({ alias: 'appAuth' });
   constructor(private authService: AuthService) {
     effect(() => {
       if (this.authService.activePermission() === this.userType()) {
