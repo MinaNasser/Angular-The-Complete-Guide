@@ -4,9 +4,21 @@
 
   <app-auth />
 
-  <ng-template appAuth="admin">
+  <!-- <ng-template appAuth="admin">
     <p>Admin Panel</p>
   </ng-template>
+  <ng-template appAuth="guest">
+    <p>You are not logged in</p>
+  </ng-template>
+  <ng-template appAuth="user">
+    <p>User Panel</p>
+  </ng-template> -->
+
+  <p *appAuth="'admin'" class="protected-content admin">Admin Panel</p>
+  <p *appAuth="'guest'" class="protected-content unauthenticated">
+    You are not logged in
+  </p>
+  <p *appAuth="'user'" class="protected-content authenticated">User Panel</p>
 
   <!-- @if (isAuthenticated() && isAdmin()) {
   <p>Admin panel</p>
