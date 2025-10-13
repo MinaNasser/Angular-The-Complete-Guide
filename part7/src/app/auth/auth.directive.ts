@@ -1,4 +1,10 @@
-import { Directive, effect, input } from '@angular/core';
+import {
+  Directive,
+  effect,
+  input,
+  TemplateRef,
+  ViewContainerRef,
+} from '@angular/core';
 import { Permission } from './auth.model';
 import { AuthService } from './auth.service';
 
@@ -8,10 +14,17 @@ import { AuthService } from './auth.service';
 })
 export class AuthDirective {
   userType = input.required<Permission>({ alias: 'appAuth' });
-  constructor(private authService: AuthService) {
+
+  constructor(
+    private authService: AuthService,
+    private templateRef: TemplateRef<AuthDirective>,
+    private viewContainer: ViewContainerRef
+  ) {
     effect(() => {
       if (this.authService.activePermission() === this.userType()) {
+        this.viewContainer.createEmbeddedView(this.templateRef);
       } else {
+        this.viewContainer.clear();
       }
     });
   }
