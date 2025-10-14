@@ -11,7 +11,7 @@ export class SafeLinkDirective {
   queryParams = input('appSafeLink', { alias: 'appSafeLink' });
   private hostElementRef = inject<ElementRef<HTMLAnchorElement>>(ElementRef);
   constructor() {
-    console.log('SafeLink Directive loaded');
+    // console.log('SafeLink Directive loaded');
   }
   onConfirmLeavePage(event: MouseEvent) {
     const wantsToLeave = confirm('Are you sure you want to leave this page?');
