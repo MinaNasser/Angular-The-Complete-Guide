@@ -25,6 +25,8 @@ export class AuthComponent {
   onReset() {
     this.email.set('');
     this.password.set('');
+  }
+  onLogout() {
     this.authService.logout();
   }
 }
