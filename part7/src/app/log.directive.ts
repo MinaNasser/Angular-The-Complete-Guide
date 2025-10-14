@@ -11,7 +11,7 @@ export class LogDirective {
   constructor(private el: ElementRef) {}
 
   onLog() {
-    console.log('Directive log');
+    // console.log('Directive log');
     console.log(this.el.nativeElement.innerText);
   }
 }
