@@ -6,6 +6,7 @@ import { LogDirective } from '../log.directive';
   selector: 'app-learning-resources',
   templateUrl: './learning-resources.component.html',
   styleUrl: './learning-resources.component.css',
+  // standalone: true
   standalone: true,
   imports: [SafeLinkDirective],
   hostDirectives: [LogDirective],
