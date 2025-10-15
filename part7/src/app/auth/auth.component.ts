@@ -16,7 +16,7 @@ export class AuthComponent {
   email = signal('');
   password = signal('');
   private authService = inject(AuthService);
-
+  // private authService = inject(AuthService);
   constructor() {
     this.authService.autoLogin();
   }
