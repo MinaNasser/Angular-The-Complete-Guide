@@ -12,6 +12,6 @@ export class LogDirective {
 
   onLog() {
     // console.log('Directive log');
-    console.log(this.el.nativeElement.innerText);
+    console.log(this.el.nativeElement);
   }
 }
