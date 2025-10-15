@@ -7,6 +7,7 @@ import { LogDirective } from '../log.directive';
   templateUrl: './learning-resources.component.html',
   styleUrl: './learning-resources.component.css',
   standalone: true,
-  imports: [SafeLinkDirective, LogDirective],
+  imports: [SafeLinkDirective],
+  hostDirectives: [LogDirective],
 })
 export class LearningResourcesComponent {}
