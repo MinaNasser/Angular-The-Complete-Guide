@@ -7,10 +7,13 @@
     {
       "name": "Almohands",
       "path": "../../Almohands"
+    },
+    {
+      "path": "../../test/New folder"
     }
   ],
   "settings": {
     "postman.settings.dotenv-detection-notification-visibility": false,
-    "liveServer.settings.multiRootWorkspaceName": "Angular-The-Complete-Guide"
+    "liveServer.settings.multiRootWorkspaceName": "New folder"
   }
 }
