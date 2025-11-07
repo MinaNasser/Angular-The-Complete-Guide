@@ -9,6 +9,10 @@
     },
     {
       "path": "../../Almohands"
+    },
+    {
+      "name": "FrontEndTest",
+      "path": "../../../Test/FrontEndTest"
     }
   ],
   "settings": {
