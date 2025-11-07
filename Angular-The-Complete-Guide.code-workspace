@@ -13,6 +13,9 @@
     {
       "name": "FrontEndTest",
       "path": "../../../Test/FrontEndTest"
+    },
+    {
+      "path": "../../../Test/Fullstack"
     }
   ],
   "settings": {
