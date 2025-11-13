@@ -13,7 +13,7 @@
   ],
   "settings": {
     "postman.settings.dotenv-detection-notification-visibility": false,
-    "liveServer.settings.multiRootWorkspaceName": "FrontEndTest",
+    "liveServer.settings.multiRootWorkspaceName": "New folder",
     "cSpell.words": ["btween"]
   }
 }
