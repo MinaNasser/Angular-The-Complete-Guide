@@ -16,6 +16,7 @@ export class AppComponent {
   isAuthenticated = computed(
     () => this.authService.activePermission() !== 'guest'
   );
+  // isAdmin = computed(() => this.authService.activePermission() === 'admin');
   isAdmin = computed(() => this.authService.activePermission() === 'admin');
 
   constructor(private authService: AuthService) {}
