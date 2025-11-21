@@ -19,5 +19,6 @@ export class AppComponent {
   // isAdmin = computed(() => this.authService.activePermission() === 'admin');
   isAdmin = computed(() => this.authService.activePermission() === 'admin');
 
+  //  Dependency Injection
   constructor(private authService: AuthService) {}
 }
