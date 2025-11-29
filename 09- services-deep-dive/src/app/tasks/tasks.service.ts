@@ -16,6 +16,6 @@ export class TasksService {
     this.tasks.update((oldTasks) => [...oldTasks, newTasks]);
   }
   getTasks() {
-    return this.tasks;
+    return this.tasks.asReadonly();
   }
 }
