@@ -1,4 +1,5 @@
-import { AddTaskDTO, Task } from './task.model';
+import { task } from './../../../../01-starting-project/src/app/Models/Task.model';
+import { AddTaskDTO, Task, TaskStatus } from './task.model';
 import { Injectable, signal } from '@angular/core';
 
 @Injectable({
@@ -15,7 +16,15 @@ export class TasksService {
     };
     this.tasks.update((oldTasks) => [...oldTasks, newTasks]);
   }
-  getTasks() {
+
+  updateTaskStatus(taskId: string, newStatus: TaskStatus) {
+    this.tasks.update((oldTasks) =>
+      oldTasks.map((task) =>
+        task.id === taskId ? { ...task, status: newStatus } : task
+      )
+    );
+  }
+  getAllTasks() {
     return this.tasks.asReadonly();
   }
 }
