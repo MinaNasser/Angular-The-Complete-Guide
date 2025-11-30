@@ -21,7 +21,9 @@
       </option>
     </select>
     <p>
-      <button>Change Status</button>
+      <button type="submit" (click)="changeTask(task().id, status.value)">
+        Change Status
+      </button>
     </p>
   </form>
 </article>

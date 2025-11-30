@@ -16,26 +16,26 @@ export class TasksListComponent {
   constructor(private taskService: TasksService) {}
   // tasks: Signal<Task[]> = this.taskService.getTasks();
   tasks = computed(() => {
+    const allTasks = this.taskService.getAllTasks()(); // احصل على ال Array
+
     switch (this.selectedFilter()) {
       case 'all':
-        return this.taskService.getAllTasks();
+        return allTasks;
 
       case 'open':
-        return this.taskService
-          .getAllTasks()
-          .filter((task) => task.status === 'OPEN');
+        return allTasks.filter((task) => task.status === 'OPEN');
+
       case 'in-progress':
-        return this.taskService
-          .getAllTasks()
-          .filter((task) => task.status === 'IN_PROGRESS');
+        return allTasks.filter((task) => task.status === 'IN_PROGRESS');
+
       case 'done':
-        return this.taskService
-          .getAllTasks()
-          .filter((task) => task.status === 'DONE');
+        return allTasks.filter((task) => task.status === 'DONE');
+
       default:
-        return this.taskService.getAllTasks();
+        return allTasks;
     }
   });
+
   onChangeTasksFilter(filter: string) {
     this.selectedFilter.set(filter);
   }
