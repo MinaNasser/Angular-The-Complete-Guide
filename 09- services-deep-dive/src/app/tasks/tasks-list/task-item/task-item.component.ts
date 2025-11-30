@@ -44,8 +44,6 @@ export class TaskItemComponent {
       default:
         break;
     }
-  }
-  changeTask(taskId: string, status: string) {
-    this.taskService.updateTaskStatus(taskId, status as TaskStatus);
+    this.taskService.updateTaskStatus(taskId, newStatus);
   }
 }
