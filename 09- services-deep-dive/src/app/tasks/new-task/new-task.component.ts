@@ -14,10 +14,18 @@ export class NewTaskComponent {
 
   constructor(private taskService: TasksService) {}
   onAddTask(title: string, description: string) {
-    this.taskService.addTask({
-      title,
-      description,
-    });
-    this.formEl()?.nativeElement.reset();
+    if (title === '' && description === '') {
+      alert('Please Enter Title & Description ');
+    } else if (description === '') {
+      alert('Please Enter Description ');
+    } else if (title === '') {
+      alert('Please Enter Title ');
+    } else {
+      this.taskService.addTask({
+        title,
+        description,
+      });
+      this.formEl()?.nativeElement.reset();
+    }
   }
 }
