@@ -24,6 +24,12 @@ export class TasksService {
       )
     );
   }
+  // ()() to call   the signal and get the value
+  getTaskById(taskId: string) {
+    return this.tasks
+      .asReadonly()()
+      .find((task) => task.id === taskId);
+  }
   getAllTasks() {
     return this.tasks.asReadonly();
   }
