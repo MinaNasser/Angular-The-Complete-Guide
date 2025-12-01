@@ -7,7 +7,6 @@ bootstrapApplication(
   AppComponent
   // ,{
   //   providers: [
-  //     // provide any application-wide services here
   //     TasksService,
   //   ],
   // }
