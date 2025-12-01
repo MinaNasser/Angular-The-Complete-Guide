@@ -2,9 +2,9 @@ import { task } from './../../../../01-starting-project/src/app/Models/Task.mode
 import { AddTaskDTO, Task, TaskStatus } from './task.model';
 import { Injectable, signal } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
+// @Injectable({
+//   providedIn: 'root',
+// })
 export class TasksService {
   private tasks = signal<Task[]>([]);
 
