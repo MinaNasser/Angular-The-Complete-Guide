@@ -21,6 +21,7 @@ export class NewTaskComponent {
     } else if (title === '') {
       alert('Please Enter Title ');
     } else {
+      // Add the task
       this.taskService.addTask({
         title,
         description,
